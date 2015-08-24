@@ -1,0 +1,26 @@
+{
+    "MENU" : {
+        "ADMIN_PANEL" : "Administration Panel",
+        "HOME": "Home",
+        "LANGUAGE" : "Language",
+        "ENGLISH": "English",
+        "FRENCH": "Fran&ccedil;ais"
+    },
+    "MAIN" : {
+        "ADMIN_PANEL" : "The 6th Screen : Administration Panel",
+        "LOGIN" : "Log In",
+        "LOGOUT" : "Log Out",
+        "USERNAME_OR_EMAIL" : "Username or Email",
+        "PASSWORD" : "Password",
+        "LOGIN_BUTTON" : "Log In",
+        "PASSWORD_LOST" : "Password lost ?",
+        "REMEMBER_ME" : "Remember me",
+        "EDIT" : "Edit",
+        "EMPTY" : "Empty name"
+    },
+    "DASHBOARD" : {
+        "WELCOME" : "Welcome {{username}}, here are Digital Signages you can edit.",
+        "SDI_NAME" : "Name",
+        "SDI_DESCRIPTION" : "Description"
+    }
+}
