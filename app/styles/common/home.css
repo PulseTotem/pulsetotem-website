@@ -54,6 +54,13 @@
 
 
 /* PP */
+#group1 {
+  z-index: 5; /* slide over group 2 */
+}
+#group1 .parallax__layer--base {
+  background: white;
+}
+
 .pp_carousel_container {
   position: absolute;
   top: 0;
@@ -95,15 +102,14 @@
 
 .pp_container {
   position: absolute;
-  top: 55%;
+  top: 10%;
   left: 0;
   right: 0;
-  bottom: 25%;
   padding: 2%;
 }
 
 .pp_container_blacktheme {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
@@ -113,11 +119,45 @@
 }
 
 .pp_title {
-
+  font-size: 1.4em;
 }
 
 .pp_subtitle {
   color: #37ABC8;
+  font-size: 1.2em;
+}
+
+/* Solution */
+#group2 {
+  z-index: 4; /* slide under groups 1 and over 3 */
+}
+#group2 .parallax__layer--base {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#group2 .parallax__layer--back {
+
+}
+
+#solution_bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('/images/home/solution_bg.jpg');
+  background-size: cover;
+}
+
+/* Contact us with mail */
+#group3 {
+  z-index: 3; /* slide under group 2 and over 4 */
+}
+#group3 .parallax__layer--base {
+  background: rgb(153,216,101);
+}
+#group3 .parallax__layer--back {
+  background: white;
 }
 
 
@@ -167,27 +207,6 @@
 
 /* style the groups
 --------------------------------------------- */
-
-#group1 {
-  z-index: 5; /* slide over group 2 */
-}
-#group1 .parallax__layer--base {
-  background: rgb(102,204,102);
-}
-
-#group2 {
-  z-index: 3; /* slide under groups 1 and 3 */
-}
-#group2 .parallax__layer--back {
-  background: rgb(123,210,102);
-}
-
-#group3 {
-  z-index: 4; /* slide over group 2 and 4 */
-}
-#group3 .parallax__layer--base {
-  background: rgb(153,216,101);
-}
 
 #group4 {
   z-index: 2; /* slide under group 3 and 5 */
