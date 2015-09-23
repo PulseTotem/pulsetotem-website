@@ -5,20 +5,19 @@
   padding: 0.2em 0;
 }
 
+* {
+  margin:0;
+  padding:0;
+}
+
+body, html {
+  overflow: hidden;
+}
+
 body {
-  padding: 0;
+  font: 100% / 1.5 Arial;
 }
 
-.menuLangItem {
-    cursor: pointer;
-}
-
-.menuLangItem img {
-    display: inline;
-}
-
-.md-toolbar-tools h1 {
-  font-size: inherit;
-  font-weight: inherit;
-  margin: inherit;
+.pulsetotem_logo {
+  height: 100%;
 }

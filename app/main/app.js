@@ -19,10 +19,18 @@ angular
     'ngMaterial',
     'pascalprecht.translate',
     'btford.socket-io',
+    'angular-carousel',
     'PulseTotemCommon'
     ])
     .config(['$locationProvider', function($locationProvider) {
         $locationProvider.html5Mode(true).hashPrefix('!');
+    }])
+    .config(['$mdThemingProvider', function($mdThemingProvider) {
+      $mdThemingProvider.theme('default')
+        .primaryPalette('blue-grey', {
+          'default' : '600'
+        })
+        .accentPalette('blue');
     }])
     .run(['$rootScope', '$location', '$cookies', '$http', 'CONSTANTS', 'backendSocket', '$route', function($rootScope, $location, $cookies, $http, CONSTANTS, backendSocket, $route) {
       $rootScope.header = "home";
