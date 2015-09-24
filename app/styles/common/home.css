@@ -55,7 +55,7 @@
 
 /* PP */
 #group1 {
-  z-index: 5; /* slide over group 2 */
+  z-index: 5;
 }
 #group1 .parallax__layer--base {
   background: white;
@@ -66,7 +66,7 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 64px;
+  bottom: 0px;
 }
 
 .pp_carousel {
@@ -76,7 +76,7 @@
 
 .pp_carousel_indicator {
   position: absolute;
-  bottom: 64px;
+  bottom: 0px;
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   text-align: center;
@@ -129,13 +129,9 @@
 
 /* Solution */
 #group2 {
-  z-index: 4; /* slide under groups 1 and over 3 */
+  z-index: 5;
 }
 #group2 .parallax__layer--base {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-#group2 .parallax__layer--back {
 
 }
 
@@ -149,15 +145,44 @@
   background-size: cover;
 }
 
+#solution_details {
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.solution_row {
+  height: 50%;
+}
+
+.av_container {
+  border: 2px solid #37ABC8;
+  text-align: center;
+  height: 80%;
+  width: 20%;
+  border-radius: 3%;
+  padding: 1%;
+}
+
+.av_icon {
+  width: 30%;
+  height: 30%;
+  color: #37ABC8;
+}
+
+.av_text {
+
+}
+
 /* Contact us with mail */
 #group3 {
-  z-index: 3; /* slide under group 2 and over 4 */
+  z-index: 5;
 }
 #group3 .parallax__layer--base {
   background: rgb(153,216,101);
-}
-#group3 .parallax__layer--back {
-  background: white;
 }
 
 

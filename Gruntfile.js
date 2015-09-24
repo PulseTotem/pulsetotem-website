@@ -356,9 +356,9 @@ module.exports = function (grunt) {
           src: ['generated/*']
         }, {
           expand: true,
-          cwd: 'bower_components/bootstrap/dist',
-          src: 'fonts/*',
-          dest: '<%= yeoman.dist %>'
+          cwd: 'bower_components/material-design-icons',
+          src: '**/*.svg',
+          dest: '<%= yeoman.dist %>/bower_components/material-design-icons'
         }]
       },
       heroku: {

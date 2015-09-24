@@ -39,6 +39,7 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/common/menu-home.css" />
         <link rel="stylesheet" href="styles/common/home.css" />
         <!-- endbuild -->
 
@@ -54,7 +55,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <md-toolbar ng-include="'common/views/menu-' + header + '.html'" ng-controller="PulseTotemCommon.MenuCtrl">
+    <md-toolbar ng-class="{'home_toolbar' : header == 'home'}" ng-include="'common/views/menu-' + header + '.html'" ng-controller="PulseTotemCommon.MenuCtrl">
 
     </md-toolbar>
 

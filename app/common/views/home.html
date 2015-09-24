@@ -20,8 +20,11 @@
     </div>
     <div id="group2" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-        <div layout="column">
-          <div layout="row" layout-align="space-around center">
+        <div id="solution_bg">
+
+        </div>
+        <div layout="column" id="solution_details">
+          <div class="solution_row" layout="row" layout-align="space-around center">
             <div class="av_container" ng-repeat="av in avRow1">
               <md-icon class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
               <div class="av_text">
@@ -29,7 +32,7 @@
               </div>
             </div>
           </div>
-          <div layout="row" layout-align="space-around center">
+          <div class="solution_row" layout="row" layout-align="space-around center">
             <div class="av_container" ng-repeat="av in avRow2">
               <md-icon class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
               <div class="av_text">
@@ -39,20 +42,13 @@
           </div>
         </div>
       </div>
-      <div class="parallax__layer parallax__layer--back">
-        <div id="solution_bg">
-
-        </div>
-      </div>
     </div>
     <div id="group3" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
+      <div class="parallax__layer parallax__layer--base">
         <div class="title">Contactez nous !</div>
       </div>
-      <div class="parallax__layer parallax__layer--back">
-        
-      </div>
     </div>
+    <!--
     <div id="group4" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
         <div class="title">Base Layer</div>
@@ -85,5 +81,6 @@
         <div class="title">Base Layer</div>
       </div>
     </div>
+    -->
   </div>
 </div>
