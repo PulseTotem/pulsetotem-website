@@ -12,27 +12,23 @@ angular.module('PulseTotemCommon')
     $scope.ppArray = [];
     $scope.ppArray.push({
       image: 'images/home/multi-content.jpg',
-      whiteTheme: false,
       title: 'Gagnez du temps sur votre communication',
       subtitle: 'Avec PulseTotem, centralisez vos contenus et diffusez les sur un écran'
     });
     $scope.ppArray.push({
       image: 'images/home/communaute.jpg',
-      whiteTheme: false,
       title: 'Renforcez le dynamisme de vos écrans',
       //subtitle: 'Utilisez votre communauté et laissez la contribuer au contenu de vos écrans !'
       subtitle: 'Laissez votre communauté s\'exprimer en temps réel sur vos écrans'
     });
     $scope.ppArray.push({
       image: 'images/home/interaction.png',
-      whiteTheme: false,
       title: 'Engagez votre audience',
       subtitle: 'Impliquez vos utilisateurs avec de l\'interaction'
     });
     $scope.ppArray.push({
       //image: 'images/home/equipe.jpg',
       image: 'images/home/dynamiser.jpg',
-      whiteTheme: false,
       title: 'Différenciez vous, soyez innovants dans vos communications numériques',
       subtitle: 'Appuyez vous sur l\'équipe de PulseTotem et construisons ensemble la solution qui vous convient'
     });

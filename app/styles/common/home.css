@@ -1,72 +1,16 @@
-/* Parallax base styles
---------------------------------------------- */
-
-.parallax {
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 300px;
-  perspective: 300px;
-  perspective-origin-x: 100%;
-}
-
-.parallax__group {
-  position: relative;
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform-origin-x: 100%;
-}
-
-.parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(.7);
-  transform: translateZ(90px) scale(.7);
-  z-index: 1;
-}
-
-.parallax__layer--base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 4;
-}
-
-.parallax__layer--back {
-  -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
-}
-
-.parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3);
-  transform: translateZ(-600px) scale(3);
-  z-index: 2;
-}
-
-
 /* PP */
-#group1 {
-  z-index: 5;
+#pp_block {
+  position: relative;
+  min-height: 90vh;
 }
-#group1 .parallax__layer--base {
-  background: white;
+
+#pp_block_content {
+  height: 90vh;
 }
 
 .pp_carousel_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 .pp_carousel {
@@ -74,12 +18,17 @@
   width: 100%;
 }
 
-.pp_carousel_indicator {
+.pp_carousel_indicator_container {
   position: absolute;
-  bottom: 0px;
-  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0;
   width: 100%;
+}
+
+.pp_carousel_indicator {
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
+  font-size: 2em;
+  width: 100%;
 }
 
 .pp_carousel_indicator .rn-carousel-indicator span.active {
@@ -102,69 +51,40 @@
 
 .pp_container {
   position: absolute;
-  top: 10%;
+  bottom: 16%;
   left: 0;
   right: 0;
-  padding: 2%;
-}
-
-.pp_container_blacktheme {
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.85);
   color: white;
-}
-
-.pp_container_whitetheme {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: black;
+  height: 10%;
 }
 
 .pp_title {
-  font-size: 1.4em;
+  height: 55%;
 }
 
 .pp_subtitle {
   color: #37ABC8;
-  font-size: 1.2em;
+  height: 40%;
 }
 
 /* Solution */
-#group2 {
-  z-index: 5;
-}
-#group2 .parallax__layer--base {
-
+#solution_block {
+  position: relative;
+  min-height: 70vh;
 }
 
-#solution_bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url('/images/home/solution_bg.jpg');
-  background-size: cover;
-}
-
-#solution_details {
-  background-color: rgba(255, 255, 255, 0.75);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.solution_row {
-  height: 50%;
+#solution_block_container {
+  height: 70vh;
 }
 
 .av_container {
   border: 2px solid #37ABC8;
   text-align: center;
-  height: 80%;
-  width: 20%;
   border-radius: 3%;
   padding: 1%;
+  margin: 5px;
 }
 
 .av_icon {
@@ -177,86 +97,107 @@
 
 }
 
-/* Contact us with mail */
-#group3 {
-  z-index: 5;
-}
-#group3 .parallax__layer--base {
-  background: rgb(153,216,101);
-}
-
-
-/* Debugger styles - used to show the effect
---------------------------------------------- */
-
-.debug {
-  position: fixed;
-  top: 0;
-  left: .5em;
-  z-index: 999;
-  background: rgba(0,0,0,.85);
-  color: #fff;
-  padding: .5em;
-  border-radius: 0 0 5px 5px;
-}
-.debug-on .parallax__group {
-  -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
-  transform: translate3d(700px, 0, -800px) rotateY(30deg);
-}
-.debug-on .parallax__layer {
-  box-shadow: 0 0 0 2px #000;
-  opacity: 0.9;
-}
-.parallax__group {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
-
-
-/* demo styles
---------------------------------------------- */
-
-.parallax {
-  font-size: 200%;
-}
-
-/* centre the content in the parallax layers */
-.title {
+/* Contact */
+.contact_block {
+  background-color: #37ABC8;
   text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
-/* style the groups
---------------------------------------------- */
-
-#group4 {
-  z-index: 2; /* slide under group 3 and 5 */
-}
-#group4 .parallax__layer--deep {
-  background: rgb(184,223,101);
+.contact_title {
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px solid white;
 }
 
-#group5 {
-  z-index: 3; /* slide over group 4 and 6 */
-}
-#group5 .parallax__layer--base {
-  background: rgb(214,229,100);
+.contact_mini_form {
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
-#group6 {
-  z-index: 2; /* slide under group 5 and 7 */
-}
-#group6 .parallax__layer--back {
-  background: rgb(245,235,100);
+.contact_miniform_input_container {
+  padding-bottom: 0px;
 }
 
-#group7 {
-  z-index: 3; /* slide over group 7 */
+.contact_miniform_input_container label {
+  color: white;
 }
-#group7 .parallax__layer--base {
-  background: rgb(255,241,100);
+
+.contact_email_icon {
+  color: white;
+}
+
+.contact_miniform_input_email {
+  color: white !important;
+  border-color: white !important;
+}
+
+.contact_miniform_button span {
+  font-weight: bold;
+  color: #37ABC8;
+}
+
+.contact_miniform_input_container.md-input-focused label {
+  color: white !important;
+}
+
+.md-input-focused .contact_email_icon {
+  color: white !important;
+}
+
+.md-input-focused .contact_miniform_input_email {
+  color: white !important;
+  border-color: white !important;
+}
+
+/* Done work */
+#done_work_block {
+  position: relative;
+  min-height: 90vh;
+}
+
+#done_work_block_content {
+  height: 90vh;
+}
+
+/* About Us */
+#aboutus_block {
+  position: relative;
+  min-height: 90vh;
+}
+
+#aboutus_block_content {
+  height: 90vh;
+}
+
+#aboutus_block_content_tabs {
+  height: 95%;
+}
+
+.aboutus_title {
+  background-color: #323232;
+  text-align: center;
+  color: #37ABC8;
+  font-weight: bold;
+  border-bottom: 1px solid #37ABC8;
+}
+
+/* Contact Us */
+#contactus_block {
+  background-color: #37ABC8;
+  text-align: center;
+}
+
+.contact_form_button {
+  background-color: #37ABC8 !important;
+}
+
+.contact_form_button span {
+  font-weight: bold;
+  color: white;
+}
+
+/* Footer */
+#footer_block {
+  background-color: black;
+  min-height: 150px;
 }

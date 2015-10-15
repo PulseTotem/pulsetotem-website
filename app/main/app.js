@@ -17,9 +17,11 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngMaterial',
+    'ngTextFill',
     'pascalprecht.translate',
     'btford.socket-io',
     'angular-carousel',
+    'fox.scrollReveal',
     'PulseTotemCommon'
     ])
     .config(['$locationProvider', function($locationProvider) {
