@@ -21,20 +21,25 @@
   </div>
 
   <div layout="column" id="solution_block">
-    <div layout="row" layout-align="space-around center" layout-wrap id="solution_block_container">
-      <div flex="20" class="av_container" ng-repeat="av in avRow1">
-        <md-icon class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
-        <div class="av_text">
-          {{av.text}}
-        </div>
-      </div>
-      <div flex="20" class="av_container" ng-repeat="av in avRow2">
-        <md-icon class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
-        <div class="av_text">
-          {{av.text}}
-        </div>
-      </div>
-    </div>
+      <h1 class="md-display-1 block_title">Solution</h1>
+        <md-grid-list
+          md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4" md-row-height="3:2"
+          md-gutter="5px" md-gutter-gt-sm="8px" id="solution_av_list">
+          <md-grid-tile class="av_container" ng-repeat="av in avRow1" ng-init="showDescription=false" ng-mouseenter="showDescription=true" ng-mouseleave="showDescription=false">
+            <md-icon ng-if="!showDescription" class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
+            <md-icon ng-if="!showDescription" class="av_details" md-svg-icon="./bower_components/material-design-icons/image/svg/production/ic_loupe_48px.svg" ng-click="showDescription=true"></md-icon>
+            <md-grid-tile-footer ng-if="!showDescription">
+              <span class="md-title">{{av.title}}</span>
+            </md-grid-tile-footer>
+            <md-grid-tile-header ng-if="showDescription">
+              <md-icon class="av_icon_details" md-svg-icon="{{av.icon}}"></md-icon><span class="md-title">{{av.title}}</span>
+            </md-grid-tile-header>
+            <md-icon ng-if="showDescription" class="av_details_close" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_close_48px.svg" ng-click="showDescription=false"></md-icon>
+            <md-content flex layout-padding ng-if="showDescription">
+              {{av.description}}
+            </md-content>
+          </md-grid-tile>
+        </md-grid-list>
   </div>
 
   <div data-sr='wait 0.2s scale up 20%' layout="column" class="contact_block">
@@ -50,7 +55,7 @@
 
   <div layout="column" id="done_work_block">
     <div layout="column" id="done_work_block_content">
-
+      <h1 class="md-display-1 block_title">Some Productions</h1>
     </div>
   </div>
 
@@ -67,31 +72,67 @@
 
   <div layout="column" id="aboutus_block">
     <div layout="column" id="aboutus_block_content">
-      <h1 class="md-display-1 aboutus_title">About Us !</h1>
+      <h1 class="md-display-1 block_title">About Us !</h1>
       <md-tabs id="aboutus_block_content_tabs" md-swipe-content md-border-bottom>
         <md-tab label="PulseTotem">
           <md-content class="md-padding">
             <h1 class="md-display-2">PulseTotem</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+            <p>
+              Les systèmes d'affichages dynamiques sont aujourd'hui en plein essor et pratiquement omniprésents : la partie visible de ces systèmes sont les écrans que l'on retrouve aussi bien dans les gares ou les aéroports que dans les universités et les entreprises.
+              Cependant ces systèmes sont fondés sur des principes de communication antérieurs à l'ère du Web 2.0 et ne permettent pas de profiter de l'ensemble des contenus générés directement par les utilisateurs.
+            </p>
+            <p>
+              Ainsi l'essor des réseaux sociaux et de l'information disponible en temps réel et géolocalisée nous pousse à imaginer une nouvelle forme de communication sur écran.
+              Nous proposons ainsi une solution logicielle (en mode SaaS) permettant de créer et gérer son affichage dynamique en intégrant aussi bien des contenus informatifs traditionnels (textes, images, vidéos) que des informations temps réels et interactives provenant de différentes sources.
+              Nous souhaitons ainsi engager davantage les spectateurs dans les informations diffusées à l'écran, garantir la fraîcheur de l'information et faciliter la gestion d'un parc d'écrans.
+            </p>
+            <p>
+              Enfin, les écrans étant de plus en plus présents autour de nous, il nous semble nécessaire de repenser la relation que les usagers ont avec ces différents écrans.
+              Nous proposons pour cela d'améliorer l'expérience utilisateur par l'ajout d'interactions directs entre l'écran et l'usager, en proposant à ce dernier de prendre le contrôle de l'écran ou encore de récupérer des informations fournies par l'écran, avec son smartphone, une tablette, l'interaction tactile, l'interaction gestuelle ou encore l'interaction vocale.
+            </p>
           </md-content>
         </md-tab>
         <md-tab label="Team">
           <md-content class="md-padding">
             <h1 class="md-display-2">Team</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
-            <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
-            <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+            <div layout="row">
+              <md-card flex>
+                <img src="images/team/Christian.png" class="md-card-image" alt="Christian">
+                <md-card-content>
+                  <h2 class="md-title">Christian</h2>
+                  <p>
+                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                  </p>
+                </md-card-content>
+              </md-card>
+              <md-card flex>
+                <img src="images/team/Simon.jpg" class="md-card-image" alt="Simon">
+                <md-card-content>
+                  <h2 class="md-title">Simon</h2>
+                  <p>
+                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                  </p>
+                </md-card-content>
+              </md-card>
+            </div>
           </md-content>
         </md-tab>
         <md-tab label="Where to find us ?">
           <md-content class="md-padding">
             <div layout layout-sm="column">
               <div flex="20">
-                <h2 class="md-title">Where to find us ?</h2>
+                <h1 class="md-display-2">Where to find us ?</h1>
                 <p>Business Pole</p>
                 <p>1047 Route des Dolines - Allee Pierre Ziller</p>
                 <p>06900 Valbonne Sophia-Antipolis</p>
                 <p>France</p>
+                <br/>
+                <p>
+                  Accompagné et hébergé par <a href="http://www.incubateurpacaest.org">l'Incubateur Paca-Est</a>
+                  <img src="images/logos/ipe_logo.jpg" aria-label="Logo Incubateur Paca-Est" class="ipe_logo" />
+                </p>
               </div>
               <div flex>
                 <iframe src="https://mapsengine.google.com/map/embed?mid=zLgURc0UvE04.kGH3kkOlb8yE" width="100%" height="480px"></iframe>
@@ -103,7 +144,7 @@
     </div>
   </div>
   <div layout="column" id="contactus_block">
-    <h1 class="md-title contact_title">Contact Us !</h1>
+    <h1 class="md-display-1 block_title">Contact Us !</h1>
     <md-content layout-padding>
       <form name="contactForm">
         <div layout layout-sm="column">

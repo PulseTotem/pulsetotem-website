@@ -1,3 +1,12 @@
+/* Global */
+.block_title {
+  background-color: #323232;
+  text-align: center;
+  color: #37ABC8;
+  font-weight: bold;
+  border-bottom: 1px solid #37ABC8;
+}
+
 /* PP */
 #pp_block {
   position: relative;
@@ -75,25 +84,56 @@
   min-height: 70vh;
 }
 
-#solution_block_container {
-  height: 70vh;
-}
-
-.av_container {
-  border: 2px solid #37ABC8;
-  text-align: center;
-  border-radius: 3%;
-  padding: 1%;
+#solution_av_list {
+  flex: 1 1 0%;
   margin: 5px;
 }
 
+.av_container {
+  border: 1px solid #37ABC8;
+}
+
+.av_container md-grid-tile-footer, .av_container md-grid-tile-header {
+  border-top: 1px solid #323232;
+  background-color: #37ABC8;
+}
+
+.av_container md-grid-tile-footer figcaption, .av_container md-grid-tile-header figcaption {
+  font-weight: bold;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .av_icon {
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
   color: #37ABC8;
 }
 
-.av_text {
+.av_icon_details {
+  color: white;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.av_details {
+  position: absolute;
+  right: 0%;
+  color: #37ABC8;
+  width: 50px;
+  height: 50px;
+}
+
+.av_details_close {
+  position: absolute;
+  right: 0%;
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.av_description {
 
 }
 
@@ -101,6 +141,8 @@
 .contact_block {
   background-color: #37ABC8;
   text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .contact_title {
@@ -173,12 +215,8 @@
   height: 95%;
 }
 
-.aboutus_title {
-  background-color: #323232;
-  text-align: center;
-  color: #37ABC8;
-  font-weight: bold;
-  border-bottom: 1px solid #37ABC8;
+.ipe_logo {
+  max-width: 100%;
 }
 
 /* Contact Us */
@@ -198,6 +236,6 @@
 
 /* Footer */
 #footer_block {
-  background-color: black;
+  background-color: #323232;
   min-height: 150px;
 }

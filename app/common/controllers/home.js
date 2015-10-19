@@ -43,33 +43,40 @@ angular.module('PulseTotemCommon')
     $scope.avRow1 = [];
     $scope.avRow1.push({
       icon: './bower_components/material-design-icons/action/svg/production/ic_history_48px.svg',
-      text: "Temps réel"
+      title: "Temps réel",
+      description: "Conservez votre audience en diffusant les contenus les plus récents en temps réel !"
     });
     $scope.avRow1.push({
       icon: './bower_components/material-design-icons/file/svg/production/ic_cloud_circle_48px.svg',
-      text: "Centralisation des contenus"
+      title: "Centralisation des contenus",
+      description: "Fini le casse tête pour la gestion de vos différents médias : gérez tous vos contenus depuis une unique plateforme !"
     });
     $scope.avRow1.push({
       icon: './bower_components/material-design-icons/av/svg/production/ic_games_48px.svg',
-      text: "Interactions directes"
+      title: "Interactions directes",
+      description: "Engagez vos usagers en leur permettant d'interagir en direct avec vos écrans et multipliez votre audience !"
     });
     $scope.avRow1.push({
       icon: './bower_components/material-design-icons/content/svg/production/ic_archive_48px.svg',
-      text: "Récupération automatisée des contenus existants"
+      title: "Récupération automatisée des contenus existants",
+      description: "Pourquoi recréer du contenu s'il existe déjà ? Ne perdez plus de temps et utilisez notre plateforme pour récupérer de manière automatisée les contenus que vous avez déjà réalisés ailleurs !"
     });
 
     $scope.avRow2 = [];
-    $scope.avRow2.push({
+    $scope.avRow1.push({
       icon: './bower_components/material-design-icons/notification/svg/production/ic_event_available_48px.svg',
-      text: "Dynamisation des évènements"
+      title: "Dynamisation des évènements",
+      description: "Tout le monde utilise son smartphone lors de vos événements ? Profitez-en pour donner un second souffle à vos événements en diffusant en direct les réactions de votre communauté sur écran et en les invitant à participer !"
     });
-    $scope.avRow2.push({
+    $scope.avRow1.push({
       icon: './bower_components/material-design-icons/action/svg/production/ic_build_48px.svg',
-      text: "Personnalisation"
+      title: "Personnalisation",
+      description: "Envie d'un affichage original mais pas le temps ni le budget ? Qu'à cela ne tienne : profitez des avantages de personnalisation et des interfaces simplifiées de notre solution et adaptez la diffusion à votre image !"
     });
-    $scope.avRow2.push({
+    $scope.avRow1.push({
       icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
-      text: "Full Web"
+      title: "Full Web",
+      description: "Besoin d'accéder à vos écrans ou de changer du contenu alors que vous êtes en déplacement ? Plus d'inquiétude : notre solution ne nécessite qu'un navigateur web pour être utilisée et administrée !"
     });
 
   }]);
