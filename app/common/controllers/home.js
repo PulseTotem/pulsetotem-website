@@ -8,7 +8,7 @@
  * Controller of the pulsetotemApp
  */
 angular.module('PulseTotemCommon')
-  .controller('PulseTotemCommon.HomeCtrl', ['$scope', function($scope){
+  .controller('PulseTotemCommon.HomeCtrl', ['$scope', '$anchorScroll', function($scope, $anchorScroll){
     $scope.ppArray = [];
     $scope.ppArray.push({
       image: 'images/home/multi-content.jpg',
@@ -78,5 +78,11 @@ angular.module('PulseTotemCommon')
       title: "Full Web",
       description: "Besoin d'accéder à vos écrans ou de changer du contenu alors que vous êtes en déplacement ? Plus d'inquiétude : notre solution ne nécessite qu'un navigateur web pour être utilisée et administrée !"
     });
+
+
+    setTimeout(function () {
+      $anchorScroll();
+    }, 1000);
+
 
   }]);

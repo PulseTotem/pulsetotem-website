@@ -55,7 +55,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <md-toolbar ng-class="{'home_toolbar' : header == 'home'}" ng-include="'common/views/menu-' + header + '.html'" ng-controller="PulseTotemCommon.MenuCtrl">
+    <md-toolbar ng-class="{'home_toolbar' : header == 'home' && scroll <= 150, 'home_toolbar home_toolbar_opaque' : header == 'home' && scroll > 150}" scroll-position="scroll" ng-include="'common/views/menu-' + header + '.html'" ng-controller="PulseTotemCommon.MenuCtrl">
 
     </md-toolbar>
 
@@ -104,6 +104,7 @@
     <script src="bower_components/angular-textfill/angular-textfill.js"></script>
     <script src="bower_components/scrollReveal.js/dist/scrollReveal.js"></script>
     <script src="bower_components/fox-angular-scrollReveal.js/dist/fox-angular-scrollReveal.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -116,6 +117,7 @@
     <script src="common/services/constants.js"></script>
     <script src="common/services/backendSocket.js"></script>
     <script src="common/services/callbackManager.js"></script>
+    <script src="common/directives/scrollPosition.js"></script>
     <script src="common/controllers/menu.js"></script>
     <script src="common/controllers/home.js"></script>
     <script src="common/controllers/login.js"></script>

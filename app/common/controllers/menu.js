@@ -8,7 +8,7 @@
  * Controller of the pulsetotemApp
  */
 angular.module('PulseTotemCommon')
-    .controller('PulseTotemCommon.MenuCtrl', ['$rootScope', '$scope', '$translate', 'backendSocket', '$cookies', '$location', 'CONSTANTS', function ($rootScope, $scope, $translate, backendSocket, $cookies, $location, CONSTANTS) {
+    .controller('PulseTotemCommon.MenuCtrl', ['$rootScope', '$scope', '$translate', 'backendSocket', '$cookies', '$location', '$anchorScroll', 'CONSTANTS', function ($rootScope, $scope, $translate, backendSocket, $cookies, $location, $anchorScroll, CONSTANTS) {
 
         $scope.langKey = $translate.use();
 

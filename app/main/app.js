@@ -22,6 +22,7 @@ angular
     'btford.socket-io',
     'angular-carousel',
     'fox.scrollReveal',
+    'duScroll',
     'PulseTotemCommon'
     ])
     .config(['$locationProvider', function($locationProvider) {
@@ -34,15 +35,31 @@ angular
         })
         .accentPalette('blue');
     }])
-    .run(['$rootScope', '$location', '$cookies', '$http', 'CONSTANTS', 'backendSocket', '$route', function($rootScope, $location, $cookies, $http, CONSTANTS, backendSocket, $route) {
+    .config(['$anchorScrollProvider', function($anchorScrollProvider) {
+      $anchorScrollProvider.disableAutoScrolling();
+    }])
+    .value('duScrollOffset', 64)
+    .value('duScrollActiveClass', 'selectedMenu')
+    .value('duScrollBottomSpy', true)
+    .run(['$rootScope', '$location', '$cookies', '$http', 'CONSTANTS', 'backendSocket', '$route', '$anchorScroll', function($rootScope, $location, $cookies, $http, CONSTANTS, backendSocket, $route, $anchorScroll) {
+      $anchorScroll.yOffset = 64;
+
+      /*$rootScope.$on('duScrollspy:becameActive', function ($event, $element, $target) {
+        var hash = $element[0].attributes["du-scrollspy"].value;
+        if (hash != 'home') {
+          $location.hash(hash);
+        } else {
+          $location.hash(null);
+        }
+      });*/
+
       $rootScope.header = "home";
 
       if(typeof($rootScope.currentLogingFromToken) == "undefined" || $rootScope.currentLogingFromToken == null) {
         $rootScope.currentLogingFromToken = false;
       }
 
-      $rootScope.$on("$routeChangeStart", function(event, next, current) {
-
+      $rootScope.$on("$routeChangeStart", function(event, next, last) {
         if(! $rootScope.currentLogingFromToken) {
           if (typeof($rootScope.user) == "undefined" || typeof($rootScope.user.id) == "undefined") {
             var pulseTotemToken = null;
@@ -111,22 +128,22 @@ angular
                   if (next.templateUrl != "../common/views/home.html") {
                     if (!$rootScope.$$phase) {
                       $rootScope.$apply(function () {
-                        $location.path('/');
+                        $location.path(CONSTANTS.homeRoute);
                       });
                     } else {
-                      $location.path('/');
+                      $location.path(CONSTANTS.homeRoute);
                     }
                   }
                 });
-            } else {
+            } else { //Not connected, path changed
               $rootScope.header = "home";
               if (next.templateUrl != "../common/views/home.html") {
                 if (!$rootScope.$$phase) {
                   $rootScope.$apply(function () {
-                    $location.path('/');
+                    $location.path(CONSTANTS.homeRoute);
                   });
                 } else {
-                  $location.path('/');
+                  $location.path(CONSTANTS.homeRoute);
                 }
               }
             }

@@ -12,11 +12,11 @@ angular
   .module('pulsetotemApp')
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-
-      // Routes for home
+      // All other stuff
       .when('/', {
         templateUrl: '../common/views/home.html',
-        controller: 'PulseTotemCommon.HomeCtrl'
+        controller: 'PulseTotemCommon.HomeCtrl',
+        reloadOnSearch: false
       })
 
       // Routes for authentication

@@ -40,6 +40,7 @@ module.exports = function(config) {
       'bower_components/angular-textfill/angular-textfill.js',
       'bower_components/scrollReveal.js/dist/scrollReveal.js',
       'bower_components/fox-angular-scrollReveal.js/dist/fox-angular-scrollReveal.js',
+      'bower_components/angular-scroll/angular-scroll.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       '../app/configuration/**/*.js',

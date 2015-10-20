@@ -1,10 +1,14 @@
 {
     "MENU" : {
         "ADMIN_PANEL" : "Administration Panel",
-        "HOME": "Home",
         "LANGUAGE" : "Language",
         "ENGLISH": "English",
-        "FRENCH": "Fran&ccedil;ais"
+        "FRENCH": "Fran&ccedil;ais",
+        "HOME": "Home",
+        "SOLUTION": "Solution",
+        "DONE_WORK": "Some Productions",
+        "ABOUTUS": "About Us",
+        "CONTACTUS": "Contact Us"
     },
     "MAIN" : {
         "ADMIN_PANEL" : "The 6th Screen : Administration Panel",

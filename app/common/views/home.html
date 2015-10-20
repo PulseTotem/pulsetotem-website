@@ -1,5 +1,5 @@
 <div data-sr-container='{ "reset":true }'>
-  <div layout="column" id="pp_block">
+  <div layout="column" id="home">
     <div layout="column" id="pp_block_content">
       <div layout="row" class="pp_carousel_container">
           <ul rn-carousel rn-carousel-index="ppCarouselIndex" rn-carousel-auto-slide=10 rn-carousel-controls-allow-loop class="pp_carousel">
@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <div layout="column" id="solution_block">
+  <div layout="column" id="solution">
       <h1 class="md-display-1 block_title">Solution</h1>
         <md-grid-list
           md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4" md-row-height="3:2"
@@ -49,11 +49,11 @@
         <md-icon md-svg-src="./bower_components/material-design-icons/content/svg/production/ic_mail_24px.svg" class="contact_email_icon"></md-icon>
         <input ng-model="contact.email" type="email" placeholder="Email" class="contact_miniform_input_email">
       </md-input-container>
-      <md-button class="md-raised contact_miniform_button">Contact Us !</md-button>
+      <md-button class="md-raised contact_miniform_button" du-smooth-scroll="contactus">Contact Us !</md-button>
     </div>
   </div>
 
-  <div layout="column" id="done_work_block">
+  <div layout="column" id="productions">
     <div layout="column" id="done_work_block_content">
       <h1 class="md-display-1 block_title">Some Productions</h1>
     </div>
@@ -66,11 +66,11 @@
         <md-icon md-svg-src="./bower_components/material-design-icons/content/svg/production/ic_mail_24px.svg" class="contact_email_icon"></md-icon>
         <input ng-model="contact.email" type="email" placeholder="Email" class="contact_miniform_input_email">
       </md-input-container>
-      <md-button class="md-raised contact_miniform_button">Contact Us !</md-button>
+      <md-button class="md-raised contact_miniform_button" du-smooth-scroll="contactus">Contact Us !</md-button>
     </div>
   </div>
 
-  <div layout="column" id="aboutus_block">
+  <div layout="column" id="aboutus">
     <div layout="column" id="aboutus_block_content">
       <h1 class="md-display-1 block_title">About Us !</h1>
       <md-tabs id="aboutus_block_content_tabs" md-swipe-content md-border-bottom>
@@ -81,11 +81,13 @@
               Les systèmes d'affichages dynamiques sont aujourd'hui en plein essor et pratiquement omniprésents : la partie visible de ces systèmes sont les écrans que l'on retrouve aussi bien dans les gares ou les aéroports que dans les universités et les entreprises.
               Cependant ces systèmes sont fondés sur des principes de communication antérieurs à l'ère du Web 2.0 et ne permettent pas de profiter de l'ensemble des contenus générés directement par les utilisateurs.
             </p>
+            <br/>
             <p>
               Ainsi l'essor des réseaux sociaux et de l'information disponible en temps réel et géolocalisée nous pousse à imaginer une nouvelle forme de communication sur écran.
               Nous proposons ainsi une solution logicielle (en mode SaaS) permettant de créer et gérer son affichage dynamique en intégrant aussi bien des contenus informatifs traditionnels (textes, images, vidéos) que des informations temps réels et interactives provenant de différentes sources.
               Nous souhaitons ainsi engager davantage les spectateurs dans les informations diffusées à l'écran, garantir la fraîcheur de l'information et faciliter la gestion d'un parc d'écrans.
             </p>
+            <br/>
             <p>
               Enfin, les écrans étant de plus en plus présents autour de nous, il nous semble nécessaire de repenser la relation que les usagers ont avec ces différents écrans.
               Nous proposons pour cela d'améliorer l'expérience utilisateur par l'ajout d'interactions directs entre l'écran et l'usager, en proposant à ce dernier de prendre le contrôle de l'écran ou encore de récupérer des informations fournies par l'écran, avec son smartphone, une tablette, l'interaction tactile, l'interaction gestuelle ou encore l'interaction vocale.
@@ -143,7 +145,7 @@
       </md-tabs>
     </div>
   </div>
-  <div layout="column" id="contactus_block">
+  <div layout="column" id="contactus">
     <h1 class="md-display-1 block_title">Contact Us !</h1>
     <md-content layout-padding>
       <form name="contactForm">
