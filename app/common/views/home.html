@@ -72,7 +72,7 @@
 
   <div layout="column" id="aboutus">
     <h1 class="md-display-1 block_title">About Us !</h1>
-    <md-tabs id="aboutus_block_content_tabs" md-swipe-content md-stretch-tabs="always">
+    <md-tabs id="aboutus_block_content_tabs" md-swipe-content>
       <md-tab label="PulseTotem">
           <h1 class="md-display-1">PulseTotem</h1>
           <p>
@@ -90,6 +90,15 @@
             Enfin, les écrans étant de plus en plus présents autour de nous, il nous semble nécessaire de repenser la relation que les usagers ont avec ces différents écrans.
             Nous proposons pour cela d'améliorer l'expérience utilisateur par l'ajout d'interactions directs entre l'écran et l'usager, en proposant à ce dernier de prendre le contrôle de l'écran ou encore de récupérer des informations fournies par l'écran, avec son smartphone, une tablette, l'interaction tactile, l'interaction gestuelle ou encore l'interaction vocale.
           </p>
+          <br/>
+          <h1 class="md-headline rewards_title">Rewards</h1>
+          <md-list-item class="md-2-line" ng-repeat="reward in rewards">
+            <img ng-src="{{reward.logo}}" class="md-avatar rewards_logo" alt="{{reward.name}}" />
+            <div class="md-list-item-text">
+              <h3>{{ reward.name }}</h3>
+              <p>{{reward.description}}</p>
+            </div>
+          </md-list-item>
       </md-tab>
       <md-tab label="Team">
           <h1 class="md-display-1">Team</h1>

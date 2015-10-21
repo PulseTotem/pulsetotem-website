@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.pulsetotem_logo_sm {
+  height: 70%;
+}
+
 .pulsetotem_logo:focus {
   outline: none;
 }
@@ -21,4 +25,20 @@
   background-color: #37ABC8 !important;
   color: white !important;
   font-weight: bold !important;
+}
+
+.lang_flag {
+  vertical-align: middle;
+}
+
+.menu_shortcut_icon {
+  color: #37ABC8;
+}
+
+.home_toolbar_opaque .menu_shortcut {
+  background-color: #37ABC8;
+}
+
+.home_toolbar_opaque .menu_shortcut_icon {
+  color: white;
 }

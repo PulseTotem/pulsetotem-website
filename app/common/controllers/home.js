@@ -61,8 +61,6 @@ angular.module('PulseTotemCommon')
       title: "Récupération automatisée des contenus existants",
       description: "Pourquoi recréer du contenu s'il existe déjà ? Ne perdez plus de temps et utilisez notre plateforme pour récupérer de manière automatisée les contenus que vous avez déjà réalisés ailleurs !"
     });
-
-    $scope.avRow2 = [];
     $scope.avRow1.push({
       icon: './bower_components/material-design-icons/notification/svg/production/ic_event_available_48px.svg',
       title: "Dynamisation des évènements",
@@ -77,6 +75,23 @@ angular.module('PulseTotemCommon')
       icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
       title: "Full Web",
       description: "Besoin d'accéder à vos écrans ou de changer du contenu alors que vous êtes en déplacement ? Plus d'inquiétude : notre solution ne nécessite qu'un navigateur web pour être utilisée et administrée !"
+    });
+
+    $scope.rewards = [];
+    $scope.rewards.push({
+      logo: 'images/rewards/LogoFondationUnice.png',
+      name: "Fondation Unice 2015",
+      description: "Lauréat du concours \"Création/Reprise d'entreprise\" 2015"
+    });
+    $scope.rewards.push({
+      logo: 'images/rewards/ilab2015.jpg',
+      name: "iLab 2015 - Pepite",
+      description: "Lauréat du prix Pepite du concours iLab 2015 du ministère de l'enseignement supérieur et de la recherche"
+    });
+    $scope.rewards.push({
+      logo: 'images/rewards/logo-innovact-center.png',
+      name: "Innovact 2014",
+      description: "Finaliste campus du forum Innovact 2014"
     });
 
 

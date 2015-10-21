@@ -219,6 +219,15 @@
   max-width: 100%;
 }
 
+.rewards_title {
+  color: #37ABC8;
+  font-weight: bold;
+}
+
+.rewards_logo {
+  
+}
+
 /* Contact Us */
 #contactus {
   background-color: #37ABC8;
