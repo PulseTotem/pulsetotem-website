@@ -207,12 +207,12 @@
   min-height: 90vh;
 }
 
-#aboutus_block_content {
-  height: 90vh;
+#aboutus_block_content_tabs {
+  min-height: 85vh;
 }
 
-#aboutus_block_content_tabs {
-  height: 95%;
+#aboutus_block_content_tabs md-tab-content {
+  padding: 1%;
 }
 
 .ipe_logo {

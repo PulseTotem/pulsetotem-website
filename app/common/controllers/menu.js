@@ -8,7 +8,7 @@
  * Controller of the pulsetotemApp
  */
 angular.module('PulseTotemCommon')
-    .controller('PulseTotemCommon.MenuCtrl', ['$rootScope', '$scope', '$translate', 'backendSocket', '$cookies', '$location', '$anchorScroll', 'CONSTANTS', function ($rootScope, $scope, $translate, backendSocket, $cookies, $location, $anchorScroll, CONSTANTS) {
+    .controller('PulseTotemCommon.MenuCtrl', ['$rootScope', '$scope', '$translate', 'backendSocket', '$cookies', '$location', '$anchorScroll', 'CONSTANTS', '$mdSidenav', function ($rootScope, $scope, $translate, backendSocket, $cookies, $location, $anchorScroll, CONSTANTS, $mdSidenav) {
 
         $scope.langKey = $translate.use();
 
@@ -33,5 +33,16 @@ angular.module('PulseTotemCommon')
             $location.path(CONSTANTS.homeRoute);
           }
         };
+
+        $scope.toggleLeft = buildToggler('left');
+        /**
+         * Build handler to open/close a SideNav;
+         */
+        function buildToggler(navID) {
+          return function() {
+            $mdSidenav(navID)
+              .toggle();
+          }
+        }
 
     }]);

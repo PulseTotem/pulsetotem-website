@@ -49,17 +49,48 @@
         <!-- endSocketIO -->
 
     </head>
-  <body layout="column" layout-fill ng-app="pulsetotemApp">
+  <body layout="column" layout-fill ng-app="pulsetotemApp" ng-controller="PulseTotemCommon.GlobalCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <md-toolbar ng-class="{'home_toolbar' : header == 'home' && scroll <= 150, 'home_toolbar home_toolbar_opaque' : header == 'home' && scroll > 150}" scroll-position="scroll" ng-include="'common/views/menu-' + header + '.html'" ng-controller="PulseTotemCommon.MenuCtrl">
+
+    <!-- Show sm -->
+    <div layout="row" ng-if="screenIsSmall" ng-controller="PulseTotemCommon.MenuCtrl">
+      <md-toolbar ng-class="{'home_toolbar' : header == 'home' && scroll <= 150, 'home_toolbar home_toolbar_opaque' : header == 'home' && scroll > 150}" scroll-position="scroll" ng-include="'common/views/menu-' + header + '-sm.html'">
+
+      </md-toolbar>
+
+      <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+        <md-toolbar class="md-theme-indigo">
+          <h1 class="md-toolbar-tools">Sidenav Left</h1>
+        </md-toolbar>
+        <md-content layout-padding>
+          <md-button ng-click="toggleLeft()" class="md-primary">
+            Close Sidenav Left
+          </md-button>
+          <p>
+            This sidenav is locked open on your device. To go back to the default behavior,
+            narrow your display.
+          </p>
+        </md-content>
+      </md-sidenav>
+
+      <div layout="column" layout-fill ng-view>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- Show gt-md -->
+    <md-toolbar ng-if="!screenIsSmall" ng-class="{'home_toolbar' : header == 'home' && scroll <= 150, 'home_toolbar home_toolbar_opaque' : header == 'home' && scroll > 150}" scroll-position="scroll" ng-include="'common/views/menu-' + header + '.html'" ng-controller="PulseTotemCommon.MenuCtrl" hide show-gt-md>
 
     </md-toolbar>
 
-    <div layout="column" layout-fill ng-view>
+    <div ng-if="! screenIsSmall" layout="column" layout-fill ng-view>
 
     </div>
 
@@ -118,6 +149,7 @@
     <script src="common/services/backendSocket.js"></script>
     <script src="common/services/callbackManager.js"></script>
     <script src="common/directives/scrollPosition.js"></script>
+    <script src="common/controllers/global.js"></script>
     <script src="common/controllers/menu.js"></script>
     <script src="common/controllers/home.js"></script>
     <script src="common/controllers/login.js"></script>
