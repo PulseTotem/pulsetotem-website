@@ -65,11 +65,18 @@
               <div textfill="{{production.title}}" max-font-pixels="500" class="production_title"></div>
               <div textfill="{{production.subtitle}}" max-font-pixels="500" class="production_subtitle"></div>
             </div>
+            <div ng-class="{'production_more_container production_more_container_sm': screenIsSmall, 'production_more_container production_more_container_sm production_more_container_sm_open': screenIsSmall && production.IsOpen, 'production_more_container': !screenIsSmall}">
+              <div textfill="{{production.description}}" max-font-pixels="500" class="production_description"></div>
+            </div>
+            <md-button ng-if="screenIsSmall" class="md-icon-button md-raised production_more_container_sm_button" aria-label="More" ng-click="production.IsOpen=!production.IsOpen">
+              <md-icon ng-if="!production.IsOpen" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_more_vert_48px.svg" class="production_more_container_sm_button_icon"></md-icon>
+              <md-icon ng-if="production.IsOpen" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_more_horiz_48px.svg" class="production_more_container_sm_button_icon"></md-icon>
+            </md-button>
           </li>
         </ul>
       </div>
-      <div layout="row" class="pp_carousel_indicator_container">
-        <div rn-carousel-indicators ng-if="ppArray.length > 1" slides="ppArray" rn-carousel-index="ppCarouselIndex" class="pp_carousel_indicator">
+      <div layout="row" class="productions_carousel_indicator_container">
+        <div rn-carousel-indicators ng-if="productionsArray.length > 1" slides="productionsArray" rn-carousel-index="productionsCarouselIndex" class="productions_carousel_indicator">
         </div>
       </div>
     </div>

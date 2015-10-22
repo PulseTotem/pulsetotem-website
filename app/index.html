@@ -57,12 +57,12 @@
     <!-- Add your site or application content here -->
 
     <!-- Show sm -->
-    <div layout="row" ng-if="screenIsSmall" ng-controller="PulseTotemCommon.MenuCtrl">
+    <div layout="row" ng-if="screenIsSmall" ng-controller="PulseTotemCommon.MenuCtrl" class="home_toolbar_sm_container">
       <md-toolbar ng-class="{'home_toolbar' : header == 'home' && scroll <= 150, 'home_toolbar home_toolbar_opaque' : header == 'home' && scroll > 150}" scroll-position="scroll" ng-include="'common/views/menu-' + header + '-sm.html'" ng-controller="PulseTotemCommon.MenuCtrl">
 
       </md-toolbar>
 
-      <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" ng-include="'common/views/sidenav-' + header + '-sm.html'" ng-controller="PulseTotemCommon.MenuCtrl">
+      <md-sidenav class="md-sidenav-left md-whiteframe-z2 home_toolbar_sm_sidenav" md-component-id="left" ng-include="'common/views/sidenav-' + header + '-sm.html'" ng-controller="PulseTotemCommon.MenuCtrl">
 
       </md-sidenav>
 
