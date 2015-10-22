@@ -17,6 +17,9 @@
   <md-button class="md-raised" aria-label="{{ 'MENU.CONTACTUS' | translate }}" du-scrollspy="contactus" du-smooth-scroll="contactus">
     {{ 'MENU.CONTACTUS' | translate }}
   </md-button>
+  <md-button class="md-raised" aria-label="{{ 'MENU.BLOG' | translate }}" ng-href="http://blog.pulsetotem.fr" target="_blank">
+    {{ 'MENU.BLOG' | translate }}
+  </md-button>
   <md-button ng-if="langKey=='fr'" class="md-icon-button" aria-label="{{ 'MENU.ENGLISH' | translate }}" ng-click="changeLanguage('en')">
     <img src="/images/flags/en.png" class="lang_flag" alt="{{ 'MENU.ENGLISH' | translate }}" />
   </md-button>

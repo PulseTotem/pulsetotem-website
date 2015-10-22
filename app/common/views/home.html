@@ -54,8 +54,24 @@
   </div>
 
   <div layout="column" id="productions">
-    <div layout="column" id="done_work_block_content">
+    <div layout="column" id="productions_block_content">
       <h1 class="md-display-1 block_title">Some Productions</h1>
+      <div layout="row" class="productions_carousel_container">
+        <ul rn-carousel rn-carousel-index="productionsCarouselIndex" rn-carousel-auto-slide=10 rn-carousel-controls-allow-loop class="productions_carousel">
+          <li ng-repeat="production in productionsArray">
+            <div class="production_background" style="background-image: url('{{production.image}}')" >
+            </div>
+            <div class="production_container">
+              <div textfill="{{production.title}}" max-font-pixels="500" class="production_title"></div>
+              <div textfill="{{production.subtitle}}" max-font-pixels="500" class="production_subtitle"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div layout="row" class="pp_carousel_indicator_container">
+        <div rn-carousel-indicators ng-if="ppArray.length > 1" slides="ppArray" rn-carousel-index="ppCarouselIndex" class="pp_carousel_indicator">
+        </div>
+      </div>
     </div>
   </div>
 
@@ -94,29 +110,29 @@
           <h1 class="md-headline rewards_title">Rewards</h1>
           <md-list-item class="md-2-line" ng-repeat="reward in rewards">
             <img ng-src="{{reward.logo}}" class="md-avatar rewards_logo" alt="{{reward.name}}" />
-            <div class="md-list-item-text">
-              <h3>{{ reward.name }}</h3>
+            <div class="md-list-item-text rewards_description">
+              <h2>{{ reward.name }}</h2>
               <p>{{reward.description}}</p>
             </div>
           </md-list-item>
       </md-tab>
       <md-tab label="Team">
           <h1 class="md-display-1">Team</h1>
-          <div layout="row">
-            <md-card flex>
+          <div layout="row" layout-align="space-around center">
+            <md-card flex="auto" flex-gt-md="30">
               <img src="images/team/Christian.png" class="md-card-image" alt="Christian">
               <md-card-content>
-                <h2 class="md-title">Christian</h2>
+                <h2 class="md-title team_username">Christian</h2>
                 <p>
                   The titles of Washed Out's breakthrough song and the first single from Paracosm share the
                   two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
                 </p>
               </md-card-content>
             </md-card>
-            <md-card flex>
+            <md-card flex="auto" flex-gt-md="30">
               <img src="images/team/Simon.jpg" class="md-card-image" alt="Simon">
               <md-card-content>
-                <h2 class="md-title">Simon</h2>
+                <h2 class="md-title team_username">Simon</h2>
                 <p>
                   The titles of Washed Out's breakthrough song and the first single from Paracosm share the
                   two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...

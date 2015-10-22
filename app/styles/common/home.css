@@ -225,7 +225,20 @@
 }
 
 .rewards_logo {
-  
+  width: 100px !important;
+  height: 100px !important;
+  margin-top: 20px !important;
+}
+
+.rewards_description {
+  padding-top: 41px !important;
+}
+
+.team_username {
+  background-color: #37ABC8;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Contact Us */

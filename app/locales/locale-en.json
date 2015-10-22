@@ -8,7 +8,8 @@
         "SOLUTION": "Solution",
         "DONE_WORK": "Some Productions",
         "ABOUTUS": "About Us",
-        "CONTACTUS": "Contact Us"
+        "CONTACTUS": "Contact Us",
+        "BLOG" : "Blog"
     },
     "MAIN" : {
         "ADMIN_PANEL" : "The 6th Screen : Administration Panel",

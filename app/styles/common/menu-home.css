@@ -32,13 +32,13 @@
 }
 
 .menu_shortcut_icon {
-  color: #37ABC8;
+  color: #37ABC8 !important;
 }
 
 .home_toolbar_opaque .menu_shortcut {
-  background-color: #37ABC8;
+  background-color: #37ABC8 !important;
 }
 
 .home_toolbar_opaque .menu_shortcut_icon {
-  color: white;
+  color: white !important;
 }
