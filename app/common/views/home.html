@@ -120,15 +120,6 @@
             Enfin, les écrans étant de plus en plus présents autour de nous, il nous semble nécessaire de repenser la relation que les usagers ont avec ces différents écrans.
             Nous proposons pour cela d'améliorer l'expérience utilisateur par l'ajout d'interactions directs entre l'écran et l'usager, en proposant à ce dernier de prendre le contrôle de l'écran ou encore de récupérer des informations fournies par l'écran, avec son smartphone, une tablette, l'interaction tactile, l'interaction gestuelle ou encore l'interaction vocale.
           </p>
-          <br/>
-          <h1 class="md-headline rewards_title">Rewards</h1>
-          <md-list-item class="md-2-line" ng-repeat="reward in rewards">
-            <img ng-src="{{reward.logo}}" class="md-avatar rewards_logo" alt="{{reward.name}}" />
-            <div class="md-list-item-text rewards_description">
-              <h2>{{ reward.name }}</h2>
-              <p>{{reward.description}}</p>
-            </div>
-          </md-list-item>
       </md-tab>
       <md-tab label="Team">
           <h1 class="md-display-1">Team</h1>
@@ -175,6 +166,16 @@
             </div>
           </div>
       </md-tab>
+      <md-tab label="Rewards">
+        <h1 class="md-display-1">Rewards</h1>
+            <div layout="row" ng-repeat="reward in rewards">
+              <img ng-src="{{reward.logo}}" class="md-avatar rewards_logo" alt="{{reward.name}}" />
+              <div class="rewards_description">
+                <h2>{{ reward.name }}</h2>
+                <p>{{reward.description}}</p>
+              </div>
+            </div>
+      </md-tab>
     </md-tabs>
   </div>
   <div layout="column" id="contactus">
@@ -216,7 +217,18 @@
     </md-content>
   </div>
 
-  <div layout="column" id="footer_block">
-
+  <div layout="row" layout-align="space-around start" id="footer_block">
+    <div layout="column">
+      <h1>Information</h1>
+    </div>
+    <div layout="column">
+      <h1>Follow us</h1>
+    </div>
+    <div layout="column">
+      <h1>Contact Us</h1>
+    </div>
+  </div>
+  <div layout="column" id="footer_bottom">
+    <p>&copy; 2015 PulseTotem - All Rights Reserved</p>
   </div>
 </div>

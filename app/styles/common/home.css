@@ -253,7 +253,7 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 42px;
+  bottom: 0;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -267,27 +267,26 @@
   padding: 1%;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
-  height: 10%;
+  width: 20%;
+  height: 20%;
 }
 
-.production_title {
+/*.production_title {
   height: 55%;
-}
+}*/
 
 .production_subtitle {
   color: #37ABC8;
-  height: 40%;
 }
 
 .production_more_container {
   position: absolute;
   bottom: 10%;
-  left: 0;
-  width: 100%;
+  right: 0;
   background-color: rgba(255, 255, 255, 0.9);
   color: #37ABC8;
   text-align: center;
-  height: 10%;
+  width: 20%;
 }
 
 .production_more_container_sm {
@@ -371,4 +370,17 @@
 #footer_block {
   background-color: #323232;
   min-height: 150px;
+  padding: 10px;
+}
+
+#footer_block div h1 {
+  color: lightgray;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#footer_bottom {
+  background-color: black;
+  color: grey;
+  text-align: center;
 }
