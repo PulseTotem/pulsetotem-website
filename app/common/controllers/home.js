@@ -79,7 +79,7 @@ angular.module('PulseTotemCommon')
 
     $scope.productionsArray = [];
     $scope.productionsArray.push({
-      image: "images/productions/???.jpg",
+      image: "images/productions/fetedelascience.jpg",
       title: "Fête de la science 2015",
       subtitle: "Stand et démonstration d'une prise de contrôle de l'écran avec une tablette pour laisser un message dans notre livre d'interactif",
       description: "3 zones avec les tweets de l'évènement dans la zone de droite, la diffusion des messages de notre livre d'or dans la zone à gauche et la prise de contrôle elle-même dans la zone du haut.",

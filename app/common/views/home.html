@@ -21,8 +21,11 @@
   </div>
 
   <div layout="column" id="solution">
-      <h1 class="md-display-1 block_title">Solution</h1>
-        <md-grid-list
+      <div class="md-display-1 block_title">
+        <h1>Solution</h1>
+        <h3><span style="font-weight: bold">PulseTotem</span> est une solution logicielle d'affichage dynamique interactive et temps réel fortement personnalisable pour s'adapter à vos usages.</h3>
+      </div>
+      <md-grid-list
           md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4" md-row-height="3:2"
           md-gutter="5px" md-gutter-gt-sm="8px" id="solution_av_list">
           <md-grid-tile class="av_container" ng-repeat="av in avRow1" ng-init="showDescription=false" ng-mouseenter="showDescription=true" ng-mouseleave="showDescription=false">
@@ -40,22 +43,24 @@
             </md-content>
           </md-grid-tile>
         </md-grid-list>
-  </div>
-
-  <div data-sr='wait 0.2s scale up 20%' layout="column" class="contact_block">
-    <h1 class="md-title contact_title">Contact Us !</h1>
-    <div layout="row" layout-align="center" class="contact_mini_form">
-      <md-input-container class="md-icon-float md-default-theme contact_miniform_input_container">
-        <md-icon md-svg-src="./bower_components/material-design-icons/content/svg/production/ic_mail_24px.svg" class="contact_email_icon"></md-icon>
-        <input ng-model="contact.email" type="email" placeholder="Email" class="contact_miniform_input_email">
-      </md-input-container>
-      <md-button class="md-raised contact_miniform_button" du-smooth-scroll="contactus">Contact Us !</md-button>
+    <div data-sr='wait 0.2s scale up 20%' layout="column" class="contact_block">
+      <h1 class="md-title contact_title">Contact Us !</h1>
+      <div layout="row" layout-align="center" class="contact_mini_form">
+        <md-input-container class="md-icon-float md-default-theme contact_miniform_input_container">
+          <md-icon md-svg-src="./bower_components/material-design-icons/content/svg/production/ic_mail_24px.svg" class="contact_email_icon"></md-icon>
+          <input ng-model="contact.email" type="email" placeholder="Email" class="contact_miniform_input_email">
+        </md-input-container>
+        <md-button class="md-raised contact_miniform_button" du-smooth-scroll="contactus">Contact Us !</md-button>
+      </div>
     </div>
   </div>
 
   <div layout="column" id="productions">
+    <div class="md-display-1 block_title">
+      <h1>Productions</h1>
+      <h3><span style="font-weight: bold">PulseTotem</span> a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes.</h3>
+    </div>
     <div layout="column" id="productions_block_content">
-      <h1 class="md-display-1 block_title">Some Productions</h1>
       <div layout="row" class="productions_carousel_container">
         <ul rn-carousel rn-carousel-index="productionsCarouselIndex" rn-carousel-auto-slide=10 rn-carousel-controls-allow-loop class="productions_carousel">
           <li ng-repeat="production in productionsArray">
@@ -94,7 +99,9 @@
   </div>
 
   <div layout="column" id="aboutus">
-    <h1 class="md-display-1 block_title">About Us !</h1>
+    <div class="md-display-1 block_title">
+      <h1>About us</h1>
+    </div>
     <md-tabs id="aboutus_block_content_tabs" md-swipe-content>
       <md-tab label="PulseTotem">
           <h1 class="md-display-1">PulseTotem</h1>
@@ -171,7 +178,9 @@
     </md-tabs>
   </div>
   <div layout="column" id="contactus">
-    <h1 class="md-display-1 block_title">Contact Us !</h1>
+    <div class="md-display-1 block_title">
+      <h1>Contact us</h1>
+    </div>
     <md-content layout-padding>
       <form name="contactForm">
         <div layout layout-sm="column">
