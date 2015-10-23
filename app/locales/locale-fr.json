@@ -27,5 +27,55 @@
         "WELCOME" : "Bienvenue {{username}}, voici les SDI auxquels vous avez acc&egrave;s.",
         "SDI_NAME" : "Nom",
         "SDI_DESCRIPTION" : "Description"
+    },
+    "HOME": {
+      "MULTICONTENT": {
+        "TITLE": "Gagnez du temps sur votre communication",
+        "SUBTITLE": "Avec PulseTotem, centralisez vos contenus et diffusez les sur un écran"
+      },
+      "COMMUNITY": {
+        "TITLE": "Renforcez le dynamisme de vos écrans",
+        "SUBTITLE": "Laissez votre communauté s'exprimer en temps réel sur vos écrans"
+      },
+      "INTERACTION": {
+        "TITLE": "Engagez votre audience",
+        "SUBTITLE": "Impliquez vos utilisateurs avec de l'interaction"
+      },
+      "DYNAMIZE": {
+        "TITLE": "Différenciez vous, soyez innovants dans vos communications numériques",
+        "SUBTITLE": "Appuyez vous sur l'équipe de PulseTotem et construisons ensemble la solution qui vous convient"
+      }
+    },
+    "SOLUTION": {
+      "FEATURES": {
+        "REALTIME": {
+          "TITLE": "Temps réel",
+          "DESCRIPTION": "Conservez votre audience réceptive en diffusant les contenus les plus récents en temps réel !"
+        },
+        "CENTRALIZATION": {
+          "TITLE": "Centralisation des contenus",
+          "DESCRIPTION": "Fini le casse tête pour la gestion de vos différents médias : gérez tous vos contenus depuis une unique plateforme !"
+        },
+        "INTERACTION": {
+          "TITLE": "Interactions directes",
+          "DESCRIPTION": "Engagez vos usagers en leur permettant d'interagir directement avec vos écrans via leur smartphone, par le geste ou encore par la parole !"
+        },
+        "AUTOMATED": {
+          "TITLE": "Recherche de contenus",
+          "DESCRIPTION": "Utilisez notre plateforme pour récupérer de manière automatisée les contenus que vous avez déjà réalisés ailleurs !"
+        },
+        "DYNAMICEVENTS": {
+          "TITLE": "Dynamisation des événements",
+          "DESCRIPTION": "Donnez un second souffle à vos événements en diffusant en direct les réactions de votre communauté sur écran et en les invitant à participer !"
+        },
+        "CUSTOMIZATION": {
+          "TITLE": "Personnalisation",
+          "DESCRIPTION": "Profitez des avantages de personnalisation et des interfaces simplifiées de notre solution et adaptez la diffusion à votre image !"
+        },
+        "FULLWEB": {
+          "TITLE": "Full Web",
+          "DESCRIPTION": "Simplifiez vous la vie : notre solution ne nécessite qu'un navigateur web pour être utilisée et administrée !"
+        }
+      }
     }
 }

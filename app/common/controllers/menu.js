@@ -10,10 +10,10 @@
 angular.module('PulseTotemCommon')
     .controller('PulseTotemCommon.MenuCtrl', ['$rootScope', '$scope', '$translate', 'backendSocket', '$cookies', '$location', '$anchorScroll', 'CONSTANTS', '$mdSidenav', function ($rootScope, $scope, $translate, backendSocket, $cookies, $location, $anchorScroll, CONSTANTS, $mdSidenav) {
 
-        $scope.langKey = $translate.use();
+        $rootScope.langKey = $translate.use();
 
         $scope.changeLanguage = function (langKey) {
-          $scope.langKey = langKey;
+          $rootScope.langKey = langKey;
           $translate.use(langKey);
         };
 
