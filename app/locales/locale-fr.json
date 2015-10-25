@@ -84,6 +84,11 @@
     "PRODUCTIONS" : {
       "DESCRIPTION" : "a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes"
     },
+    "ABOUT_US" : {
+      "TEAM" : "L'équipe",
+      "WHERE" : "Où nous trouver ?",
+      "AWARDS" : "Récompenses"
+    },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Blog : Articles récents"
     }

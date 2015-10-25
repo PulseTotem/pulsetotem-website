@@ -378,6 +378,26 @@
   padding: 1%;
 }
 
+.aboutus_navbar {
+  width: auto;
+  min-width: inherit;
+  position: static;
+}
+
+.aboutus_navbar_close {
+  display: none !important;
+}
+
+.aboutus_navbar.md-locked-open {
+  width: auto;
+  min-width: inherit;
+}
+
+.aboutus_navbar_menu {
+  position: absolute;
+  top: 3%;
+}
+
 .ipe_logo {
   max-width: 100%;
 }

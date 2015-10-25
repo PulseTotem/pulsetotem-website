@@ -109,7 +109,107 @@
     <div class="md-display-1 block_title">
       <h1>About us</h1>
     </div>
-    <md-tabs id="aboutus_block_content_tabs" md-swipe-content>
+    <div layout flex>
+      <md-button ng-if="screenIsSmall" class="md-icon-button md-raised aboutus_navbar_menu" aria-label="AboutUsMenu" ng-click="aboutus_navbar_open=!aboutus_navbar_open">
+        <md-icon ng-if="aboutus_navbar_open" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_chevron_left_48px.svg"></md-icon>
+        <md-icon ng-if="!aboutus_navbar_open" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_chevron_right_48px.svg"></md-icon>
+      </md-button>
+      <md-sidenav ng-class="{'md-sidenav-left md-whiteframe-z2 aboutus_navbar aboutus_navbar_close' : !aboutus_navbar_open, 'md-sidenav-left md-whiteframe-z2 aboutus_navbar' : aboutus_navbar_open}" md-component-id="left_aboutus" md-is-locked-open="true">
+        <md-content>
+          <div layout="column" layout-fill>
+            <md-button ng-class="{'md-raised selectedMenu' : aboutus_navbar_menu=='pulsetotem', 'md-raised' : aboutus_navbar_menu!='pulsetotem'}" aria-label="PulseTotem" ng-click="toggleLeftAboutMenu('pulsetotem')">
+              PulseTotem
+            </md-button>
+            <md-button ng-class="{'md-raised selectedMenu' : aboutus_navbar_menu=='team', 'md-raised' : aboutus_navbar_menu!='team'}" aria-label="{{'ABOUT_US.TEAM' | translate}}" ng-click="toggleLeftAboutMenu('team')">
+              {{'ABOUT_US.TEAM' | translate}}
+            </md-button>
+            <md-button ng-class="{'md-raised selectedMenu' : aboutus_navbar_menu=='where', 'md-raised' : aboutus_navbar_menu!='where'}" aria-label="{{'ABOUT_US.WHERE' | translate}}" ng-click="toggleLeftAboutMenu('where')">
+              {{'ABOUT_US.WHERE' | translate}}
+            </md-button>
+            <md-button ng-class="{'md-raised selectedMenu' : aboutus_navbar_menu=='awards', 'md-raised' : aboutus_navbar_menu!='awards'}" aria-label="{{'ABOUT_US.AWARDS' | translate}}" ng-click="toggleLeftAboutMenu('awards')">
+              {{'ABOUT_US.AWARDS' | translate}}
+            </md-button>
+          </div>
+        </md-content>
+      </md-sidenav>
+      <md-content flex layout-padding>
+        <div layout ng-if="aboutus_navbar_menu=='pulsetotem'">
+          <h1 class="md-display-1">PulseTotem</h1>
+          <p>
+            Les systèmes d'affichages dynamiques sont aujourd'hui en plein essor et pratiquement omniprésents : la partie visible de ces systèmes sont les écrans que l'on retrouve aussi bien dans les gares ou les aéroports que dans les universités et les entreprises.
+            Cependant ces systèmes sont fondés sur des principes de communication antérieurs à l'ère du Web 2.0 et ne permettent pas de profiter de l'ensemble des contenus générés directement par les utilisateurs.
+          </p>
+          <br/>
+          <p>
+            Ainsi l'essor des réseaux sociaux et de l'information disponible en temps réel et géolocalisée nous pousse à imaginer une nouvelle forme de communication sur écran.
+            Nous proposons ainsi une solution logicielle (en mode SaaS) permettant de créer et gérer son affichage dynamique en intégrant aussi bien des contenus informatifs traditionnels (textes, images, vidéos) que des informations temps réels et interactives provenant de différentes sources.
+            Nous souhaitons ainsi engager davantage les spectateurs dans les informations diffusées à l'écran, garantir la fraîcheur de l'information et faciliter la gestion d'un parc d'écrans.
+          </p>
+          <br/>
+          <p>
+            Enfin, les écrans étant de plus en plus présents autour de nous, il nous semble nécessaire de repenser la relation que les usagers ont avec ces différents écrans.
+            Nous proposons pour cela d'améliorer l'expérience utilisateur par l'ajout d'interactions directs entre l'écran et l'usager, en proposant à ce dernier de prendre le contrôle de l'écran ou encore de récupérer des informations fournies par l'écran, avec son smartphone, une tablette, l'interaction tactile, l'interaction gestuelle ou encore l'interaction vocale.
+          </p>
+        </div>
+        <div layout ng-if="aboutus_navbar_menu=='team'">
+          <h1 class="md-display-1">{{'ABOUT_US.TEAM' | translate}}</h1>
+          <div layout="row" layout-align="space-around center">
+            <md-card flex="auto" flex-gt-md="30">
+              <img src="images/team/Christian.png" class="md-card-image" alt="Christian">
+              <md-card-content>
+                <h2 class="md-title team_username">Christian</h2>
+                <p>
+                  The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                  two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                </p>
+              </md-card-content>
+            </md-card>
+            <md-card flex="auto" flex-gt-md="30">
+              <img src="images/team/Simon.jpg" class="md-card-image" alt="Simon">
+              <md-card-content>
+                <h2 class="md-title team_username">Simon</h2>
+                <p>
+                  The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                  two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                </p>
+              </md-card-content>
+            </md-card>
+          </div>
+        </div>
+        <div layout ng-if="aboutus_navbar_menu=='where'">
+          <div layout layout-sm="column">
+            <div flex="20">
+              <h1 class="md-display-1">{{'ABOUT_US.WHERE' | translate}}</h1>
+              <p>Business Pole</p>
+              <p>1047 Route des Dolines - Allee Pierre Ziller</p>
+              <p>06900 Valbonne Sophia-Antipolis</p>
+              <p>France</p>
+              <br/>
+              <p>
+                Accompagné et hébergé par <a href="http://www.incubateurpacaest.org">l'Incubateur Paca-Est</a>
+                <img src="images/logos/ipe_logo.jpg" aria-label="Logo Incubateur Paca-Est" class="ipe_logo" />
+              </p>
+            </div>
+            <div flex></div>
+            <div flex="75">
+              <iframe src="https://mapsengine.google.com/map/embed?mid=zLgURc0UvE04.kGH3kkOlb8yE" width="100%" height="480px"></iframe>
+            </div>
+          </div>
+        </div>
+        <div layout ng-if="aboutus_navbar_menu=='awards'">
+          <h1 class="md-display-1">{{'ABOUT_US.AWARDS' | translate}}</h1>
+          <div layout="row" ng-repeat="reward in rewards">
+            <img ng-src="{{reward.logo}}" class="md-avatar rewards_logo" alt="{{reward.name}}" />
+            <div class="rewards_description">
+              <h2>{{ reward.name }}</h2>
+              <p>{{reward.description}}</p>
+            </div>
+          </div>
+        </div>
+      </md-content>
+    </div>
+
+    <!-- md-tabs id="aboutus_block_content_tabs" md-swipe-content>
       <md-tab label="PulseTotem">
           <h1 class="md-display-1">PulseTotem</h1>
           <p>
@@ -183,7 +283,7 @@
               </div>
             </div>
       </md-tab>
-    </md-tabs>
+    </md-tabs -->
   </div>
   <div layout="column" id="contactus">
     <div class="md-display-1 block_title">

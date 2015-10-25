@@ -125,6 +125,15 @@ angular.module('PulseTotemCommon')
         IsOpen: false
       });
 
+      $scope.aboutus_navbar_open = true;
+      $scope.aboutus_navbar_menu = "pulsetotem";
+      $scope.toggleLeftAboutMenu = function(newMenu) {
+        $scope.aboutus_navbar_menu = newMenu;
+        if($scope.screenIsSmall) {
+          $scope.aboutus_navbar_open = false;
+        }
+      };
+
       $scope.rewards = [];
       $scope.rewards.push({
         logo: 'images/rewards/LogoFondationUnice.png',
