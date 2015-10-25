@@ -10,113 +10,90 @@
 angular.module('PulseTotemCommon')
   .controller('PulseTotemCommon.HomeCtrl', ['$rootScope', '$scope', '$anchorScroll', '$translate', function($rootScope, $scope, $anchorScroll, $translate){
 
-      $rootScope.$on('$translateChangeSuccess', function () {
-        $scope.displayAndTranslate();
-      });
+    $scope.ppArray = [];
 
-      $scope.displayAndTranslate = function () {
-        $scope.ppArray = [];
+    $scope.ppArray.push({
+      image: 'images/home/multi-content.jpg',
+      title: 'HOME.MULTICONTENT.TITLE',
+      subtitle: 'HOME.MULTICONTENT.SUBTITLE',
+      blog: null,
+      contactus: false
+    });
 
-        $translate(['HOME.MULTICONTENT.TITLE', 'HOME.MULTICONTENT.SUBTITLE']).then(function (translation) {
-          $scope.ppArray.push({
-            image: 'images/home/multi-content.jpg',
-            title: translation['HOME.MULTICONTENT.TITLE'],
-            subtitle: translation['HOME.MULTICONTENT.SUBTITLE']
-          });
-        });
+    $scope.ppArray.push({
+      image: 'images/home/communaute.jpg',
+      title: 'HOME.COMMUNITY.TITLE',
+      subtitle: 'HOME.COMMUNITY.SUBTITLE',
+      blog: null,
+      contactus: false
+    });
 
-        $translate(['HOME.COMMUNITY.TITLE', 'HOME.COMMUNITY.SUBTITLE']).then(function (translation) {
-          $scope.ppArray.push({
-            image: 'images/home/communaute.jpg',
-            title: translation['HOME.COMMUNITY.TITLE'],
-            subtitle: translation['HOME.COMMUNITY.SUBTITLE']
-          });
-        });
+    $scope.ppArray.push({
+      image: 'images/home/interaction.jpg',
+      title: 'HOME.INTERACTION.TITLE',
+      subtitle: 'HOME.INTERACTION.SUBTITLE',
+      blog: null,
+      contactus: false
+    });
 
-        $translate(['HOME.INTERACTION.TITLE', 'HOME.INTERACTION.SUBTITLE']).then(function (translation) {
-          $scope.ppArray.push({
-            image: 'images/home/interaction.jpg',
-            title: translation['HOME.INTERACTION.TITLE'],
-            subtitle: translation['HOME.INTERACTION.SUBTITLE']
-          });
-        });
+    $scope.ppArray.push({
+      image: 'images/home/dynamiser.jpg',
+      title: 'HOME.DYNAMIZE.TITLE',
+      subtitle: 'HOME.DYNAMIZE.SUBTITLE',
+      blog: null,
+      contactus: true
+    });
 
-        $translate(['HOME.DYNAMIZE.TITLE', 'HOME.DYNAMIZE.SUBTITLE']).then(function (translation) {
-          $scope.ppArray.push({
-            image: 'images/home/dynamiser.jpg',
-            title: translation['HOME.DYNAMIZE.TITLE'],
-            subtitle: translation['HOME.DYNAMIZE.SUBTITLE']
-          });
-        });
+    $scope.avRow1 = [];
 
-        $scope.avRow1 = [];
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/action/svg/production/ic_history_48px.svg',
+      title: 'SOLUTION.FEATURES.REALTIME.TITLE',
+      description: 'SOLUTION.FEATURES.REALTIME.DESCRIPTION',
+      showDescription: false
+    });
 
-        $translate(['SOLUTION.FEATURES.REALTIME.TITLE', 'SOLUTION.FEATURES.REALTIME.DESCRIPTION']).then(function (translation) {
-          $scope.avRow1.push({
-            icon: './bower_components/material-design-icons/action/svg/production/ic_history_48px.svg',
-            title: translation['SOLUTION.FEATURES.REALTIME.TITLE'],
-            description: translation['SOLUTION.FEATURES.REALTIME.DESCRIPTION']
-          });
-        });
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/file/svg/production/ic_cloud_circle_48px.svg',
+      title: 'SOLUTION.FEATURES.CENTRALIZATION.TITLE',
+      description: 'SOLUTION.FEATURES.CENTRALIZATION.DESCRIPTION',
+      showDescription: false
+    });
 
-        $translate(['SOLUTION.FEATURES.CENTRALIZATION.TITLE', 'SOLUTION.FEATURES.CENTRALIZATION.DESCRIPTION']).then(function (translation) {
-          $scope.avRow1.push({
-            icon: './bower_components/material-design-icons/file/svg/production/ic_cloud_circle_48px.svg',
-            title: translation['SOLUTION.FEATURES.CENTRALIZATION.TITLE'],
-            description: translation['SOLUTION.FEATURES.CENTRALIZATION.DESCRIPTION']
-          });
-        });
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/av/svg/production/ic_games_48px.svg',
+      title: 'SOLUTION.FEATURES.INTERACTION.TITLE',
+      description: 'SOLUTION.FEATURES.INTERACTION.DESCRIPTION',
+      showDescription: false
+    });
 
-        $translate(['SOLUTION.FEATURES.INTERACTION.TITLE', 'SOLUTION.FEATURES.INTERACTION.DESCRIPTION']).then(function (translation) {
-          $scope.avRow1.push({
-            icon: './bower_components/material-design-icons/av/svg/production/ic_games_48px.svg',
-            title: translation['SOLUTION.FEATURES.INTERACTION.TITLE'],
-            description: translation['SOLUTION.FEATURES.INTERACTION.DESCRIPTION']
-          });
-        });
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/content/svg/production/ic_archive_48px.svg',
+      title: 'SOLUTION.FEATURES.AUTOMATED.TITLE',
+      description: 'SOLUTION.FEATURES.AUTOMATED.DESCRIPTION',
+      showDescription: false
+    });
 
-        $translate(['SOLUTION.FEATURES.AUTOMATED.TITLE', 'SOLUTION.FEATURES.AUTOMATED.DESCRIPTION']).then(function (translation) {
-          $scope.avRow1.push({
-            icon: './bower_components/material-design-icons/content/svg/production/ic_archive_48px.svg',
-            title: translation['SOLUTION.FEATURES.AUTOMATED.TITLE'],
-            description: translation['SOLUTION.FEATURES.AUTOMATED.DESCRIPTION']
-          });
-        });
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/notification/svg/production/ic_event_available_48px.svg',
+      title: 'SOLUTION.FEATURES.DYNAMICEVENTS.TITLE',
+      description: 'SOLUTION.FEATURES.DYNAMICEVENTS.DESCRIPTION',
+      showDescription: false
+    });
 
-        $translate(['SOLUTION.FEATURES.DYNAMICEVENTS.TITLE', 'SOLUTION.FEATURES.DYNAMICEVENTS.DESCRIPTION']).then(function (translation) {
-          $scope.avRow1.push({
-            icon: './bower_components/material-design-icons/notification/svg/production/ic_event_available_48px.svg',
-            title: translation['SOLUTION.FEATURES.DYNAMICEVENTS.TITLE'],
-            description: translation['SOLUTION.FEATURES.DYNAMICEVENTS.DESCRIPTION']
-          });
-        });
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/action/svg/production/ic_build_48px.svg',
+      title: 'SOLUTION.FEATURES.CUSTOMIZATION.TITLE',
+      description: 'SOLUTION.FEATURES.CUSTOMIZATION.DESCRIPTION',
+      showDescription: false
+    });
 
-        $translate(['SOLUTION.FEATURES.CUSTOMIZATION.TITLE', 'SOLUTION.FEATURES.CUSTOMIZATION.DESCRIPTION']).then(function (translation) {
-          $scope.avRow1.push({
-            icon: './bower_components/material-design-icons/action/svg/production/ic_build_48px.svg',
-            title: translation['SOLUTION.FEATURES.CUSTOMIZATION.TITLE'],
-            description: translation['SOLUTION.FEATURES.CUSTOMIZATION.DESCRIPTION']
-          });
-        });
-
-        $translate(['SOLUTION.FEATURES.FULLWEB.TITLE', 'SOLUTION.FEATURES.FULLWEB.DESCRIPTION']).then(function (translation) {
-          $scope.avRow1.push({
-            icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
-            title: translation['SOLUTION.FEATURES.FULLWEB.TITLE'],
-            description: translation['SOLUTION.FEATURES.FULLWEB.DESCRIPTION']
-          });
-        });
-      };
-
-      $scope.displayAndTranslate();
-
-      /*$scope.ppArray.push({
-       image: 'images/home/dynamiser.jpg',
-       whiteTheme: false,
-       title: 'Dynamisez vos évènements avec l\'ajout d\'écrans interactifs n\'est pas dans votre top priorité',
-       subtitle: 'Contactez nous, appuyez vous sur notre expérience et nos compétences en interactions !'
-       });*/
-
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
+      title: 'SOLUTION.FEATURES.FULLWEB.TITLE',
+      description: 'SOLUTION.FEATURES.FULLWEB.DESCRIPTION',
+      showDescription: false
+    });
 
       $scope.productionsArray = [];
       $scope.productionsArray.push({
@@ -134,7 +111,7 @@ angular.module('PulseTotemCommon')
         IsOpen: false
       });
       $scope.productionsArray.push({
-        image: "images/productions/pandapero.png",
+        image: "images/productions/pandapero.jpg",
         title: "Panda'Pero #3",
         subtitle: "Démonstration à l'occasion du Panda'Pero 3ème édition, organisé par Panda'Events",
         description: "4 zones avec des vidéos promotionnelles et les tweets de l'évènement dans les 2 zones à gauche, des slides promotionnels dans la zone principale à droite, et les logos des sponsors de la soirée dans la zone du bas.",
@@ -147,6 +124,15 @@ angular.module('PulseTotemCommon')
         description: "Diffusion de différents types d'informations, photos, vidéos, affiches, annonces, calendrier des animations en cours etc. ",
         IsOpen: false
       });
+
+      $scope.aboutus_navbar_open = true;
+      $scope.aboutus_navbar_menu = "pulsetotem";
+      $scope.toggleLeftAboutMenu = function(newMenu) {
+        $scope.aboutus_navbar_menu = newMenu;
+        if($scope.screenIsSmall) {
+          $scope.aboutus_navbar_open = false;
+        }
+      };
 
       $scope.rewards = [];
       $scope.rewards.push({
@@ -164,8 +150,6 @@ angular.module('PulseTotemCommon')
         name: "Innovact 2014",
         description: "Finaliste campus du forum Innovact 2014"
       });
-   //});
-
 
     setTimeout(function () {
       $anchorScroll();

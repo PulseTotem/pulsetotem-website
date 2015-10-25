@@ -31,22 +31,25 @@
     "HOME": {
       "MULTICONTENT": {
         "TITLE": "Gain time on your communications",
-        "SUBTITLE": "With PulseTotem, centralize and broadcast your concents on your screens"
+        "SUBTITLE": "With PulseTotem, centralize and broadcast your concents on a screen"
       },
       "COMMUNITY": {
         "TITLE": "Improve the reactivity of your screens",
         "SUBTITLE": "Let your community talk in real time on your screens"
       },
       "INTERACTION": {
-        "TITLE": "Engagez votre audience",
-        "SUBTITLE": "Involve your users with interactionImpliquez vos utilisateurs avec de l'interaction"
+        "TITLE": "Catch your audience's attention",
+        "SUBTITLE": "Involve your users with interaction"
       },
       "DYNAMIZE": {
         "TITLE": "Be different and innovative in your digital communications",
-        "SUBTITLE": "Contact our team and together let's build the solution which fit to your needs"
-      }
+        "SUBTITLE": "Contact PulseTotem's team and together let's build the solution which fit your needs"
+      },
+      "MORE" : "More",
+      "CONTACTUS" : "Contact us !"
     },
     "SOLUTION": {
+      "DESCRIPTION" : "est une solution logicielle d'affichage dynamique s'appuyant sur des informations en temps réel, en interaction avec vos utilisateurs et fortement personnalisable pour s'adapter à vos besoins",
       "FEATURES": {
         "REALTIME": {
           "TITLE": "Real time",
@@ -77,5 +80,16 @@
           "DESCRIPTION": "Besoin d'accéder à vos écrans ou de changer du contenu alors que vous êtes en déplacement ? Plus d'inquiétude : notre solution ne nécessite qu'un navigateur web pour être utilisée et administrée !"
         }
       }
+    },
+    "PRODUCTIONS" : {
+      "DESCRIPTION" : "a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes"
+    },
+    "ABOUT_US" : {
+      "TEAM" : "Team",
+      "WHERE" : "Where to find us ?",
+      "AWARDS" : "Awards"
+    },
+    "FOOTER" : {
+      "RECENT_BLOG_POSTS" : "Recent Blog Posts"
     }
 }
