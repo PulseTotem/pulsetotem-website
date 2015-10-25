@@ -7,8 +7,16 @@
               <div class="pp_background" style="background-image: url('{{pp.image}}')" >
               </div>
               <div class="pp_container">
-                <div textfill="{{pp.title}}" max-font-pixels="500" class="pp_title"></div>
-                <div textfill="{{pp.subtitle}}" max-font-pixels="500" class="pp_subtitle"></div>
+                <div translate="{{pp.title}}" class="pp_title"></div>
+                <div translate="{{pp.subtitle}}" class="pp_subtitle"></div>
+              </div>
+              <div layout="row" layout-align="center center" class="pp_action_container">
+                <md-button ng-if="pp.blog != null" class="md-raised pp_action" aria-label="{{ 'HOME.MORE' | translate }}" ng-href="{{pp.blog}}" target="_blank">
+                  {{ 'HOME.MORE' | translate }}
+                </md-button>
+                <md-button ng-if="pp.contactus" class="md-raised pp_action" aria-label="{{ 'HOME.CONTACTUS' | translate }}" du-smooth-scroll="contactus">
+                  {{ 'HOME.CONTACTUS' | translate }}
+                </md-button>
               </div>
             </li>
           </ul>
@@ -22,28 +30,27 @@
 
   <div layout="column" id="solution">
       <div class="md-display-1 block_title">
-        <h1>Solution</h1>
-        <h3><span style="font-weight: bold">PulseTotem</span> est une solution logicielle d'affichage dynamique interactive et temps réel fortement personnalisable pour s'adapter à vos usages.</h3>
+        <h1>{{ 'MENU.SOLUTION' | translate }}</h1>
+        <h3><span>PulseTotem</span> {{'SOLUTION.DESCRIPTION' | translate}}.</h3>
       </div>
       <md-grid-list
           md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4" md-row-height="3:2"
-          md-gutter="5px" md-gutter-gt-sm="8px" id="solution_av_list">
-          <md-grid-tile class="av_container" ng-repeat="av in avRow1" ng-init="showDescription=false" ng-mouseenter="showDescription=true" ng-mouseleave="showDescription=false">
-            <md-icon ng-if="!showDescription" class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
-            <md-icon ng-if="!showDescription" class="av_details" md-svg-icon="./bower_components/material-design-icons/image/svg/production/ic_loupe_48px.svg" ng-click="showDescription=true"></md-icon>
-            <md-grid-tile-footer ng-if="!showDescription">
-              <span class="md-title">{{av.title}}</span>
+          md-gutter="1%" md-gutter-gt-sm="3%" id="solution_av_list">
+          <md-grid-tile ng-class="{'av_container' : $even, 'av_container av_container_bis' : $odd}" ng-repeat="av in avRow1" ng-mouseenter="av.showDescription=true" ng-mouseleave="av.showDescription=false">
+            <md-icon ng-if="!av.showDescription" class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
+            <md-icon ng-if="!av.showDescription && screenIsSmall" class="av_details" md-svg-icon="./bower_components/material-design-icons/image/svg/production/ic_loupe_48px.svg" ng-click="av.showDescription=true"></md-icon>
+            <md-grid-tile-footer ng-if="!av.showDescription" class="av_tile_footer">
+              <span class="md-title" translate="{{av.title}}"></span>
             </md-grid-tile-footer>
-            <md-grid-tile-header ng-if="showDescription">
-              <md-icon class="av_icon_details" md-svg-icon="{{av.icon}}"></md-icon><span class="md-title">{{av.title}}</span>
+            <md-grid-tile-header ng-if="av.showDescription">
+              <md-icon class="av_icon_details" md-svg-icon="{{av.icon}}"></md-icon><span class="md-title" translate="{{av.title}}"></span>
             </md-grid-tile-header>
-            <md-icon ng-if="showDescription" class="av_details_close" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_close_48px.svg" ng-click="showDescription=false"></md-icon>
-            <md-content flex layout-padding ng-if="showDescription">
-              {{av.description}}
+            <md-icon ng-if="av.showDescription && screenIsSmall" class="av_details_close" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_close_48px.svg" ng-click="av.showDescription=false"></md-icon>
+            <md-content flex layout-padding ng-if="av.showDescription" translate="{{av.description}}">
             </md-content>
           </md-grid-tile>
         </md-grid-list>
-    <div data-sr='wait 0.2s scale up 20%' layout="column" class="contact_block">
+    <!-- div data-sr='wait 0.2s scale up 20%' layout="column" class="contact_block">
       <h1 class="md-title contact_title">Contact Us !</h1>
       <div layout="row" layout-align="center" class="contact_mini_form">
         <md-input-container class="md-icon-float md-default-theme contact_miniform_input_container">
@@ -52,13 +59,13 @@
         </md-input-container>
         <md-button class="md-raised contact_miniform_button" du-smooth-scroll="contactus">Contact Us !</md-button>
       </div>
-    </div>
+    </div-->
   </div>
 
   <div layout="column" id="productions">
     <div class="md-display-1 block_title">
-      <h1>Productions</h1>
-      <h3><span style="font-weight: bold">PulseTotem</span> a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes.</h3>
+      <h1>{{ 'MENU.DONE_WORK' | translate }}</h1>
+      <h3><span>PulseTotem</span> {{ 'PRODUCTIONS.DESCRIPTION' | translate }}.</h3>
     </div>
     <div layout="column" id="productions_block_content">
       <div layout="row" class="productions_carousel_container">
@@ -87,7 +94,7 @@
     </div>
   </div>
 
-  <div data-sr='wait 0.2s scale up 20%' layout="column" class="contact_block">
+  <!-- div data-sr='wait 0.2s scale up 20%' layout="column" class="contact_block">
     <h1 class="md-title contact_title">Contact Us !</h1>
     <div layout="row" layout-align="center" class="contact_mini_form">
       <md-input-container class="md-icon-float md-default-theme contact_miniform_input_container">
@@ -96,7 +103,7 @@
       </md-input-container>
       <md-button class="md-raised contact_miniform_button" du-smooth-scroll="contactus">Contact Us !</md-button>
     </div>
-  </div>
+  </div-->
 
   <div layout="column" id="aboutus">
     <div class="md-display-1 block_title">
@@ -225,7 +232,7 @@
       <h1>Follow us</h1>
     </div>
     <div layout="column">
-      <h1>Contact Us</h1>
+      <h1>{{'FOOTER.RECENT_BLOG_POSTS' | translate}}</h1>
     </div>
   </div>
   <div layout="column" id="footer_bottom">
