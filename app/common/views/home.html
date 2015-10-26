@@ -1,6 +1,9 @@
 <div data-sr-container='{ "reset":true }'>
   <div layout="column" id="home">
     <div layout="column" id="pp_block_content">
+      <div layout="row" ng-class="{'pp_block_subtitle' : scroll2 <= 150, 'pp_block_subtitle pp_block_subtitle_none' : scroll2 > 150}" scroll-position="scroll2">
+        {{ 'HOME.SUBTITLE' | translate}}
+      </div>
       <div layout="row" class="pp_carousel_container">
           <ul rn-carousel rn-carousel-index="ppCarouselIndex" rn-carousel-auto-slide=10 rn-carousel-controls-allow-loop class="pp_carousel">
             <li ng-repeat="pp in ppArray">
@@ -71,19 +74,14 @@
       <div layout="row" class="productions_carousel_container">
         <ul rn-carousel rn-carousel-index="productionsCarouselIndex" rn-carousel-auto-slide=10 rn-carousel-controls-allow-loop class="productions_carousel">
           <li ng-repeat="production in productionsArray">
-            <div class="production_background" style="background-image: url('{{production.image}}')" >
+            <div layout layout-fill layout-sm="column">
+              <div class="production_container" flex="30" flex-sm="100">
+                <div class="production_title">{{production.title}}</div>
+                <div class="production_subtitle">{{production.subtitle}}</div>
+              </div>
+              <div flex="70" flex-sm="100" ng-class="{'production_background' : !screenIsSmall, 'production_background production_background_sm' : screenIsSmall}" style="background-image: url('{{production.image}}')" ng-cloak>
+              </div>
             </div>
-            <div class="production_container">
-              <div textfill="{{production.title}}" max-font-pixels="500" class="production_title"></div>
-              <div textfill="{{production.subtitle}}" max-font-pixels="500" class="production_subtitle"></div>
-            </div>
-            <div ng-class="{'production_more_container production_more_container_sm': screenIsSmall, 'production_more_container production_more_container_sm production_more_container_sm_open': screenIsSmall && production.IsOpen, 'production_more_container': !screenIsSmall}">
-              <div textfill="{{production.description}}" max-font-pixels="500" class="production_description"></div>
-            </div>
-            <md-button ng-if="screenIsSmall" class="md-icon-button md-raised production_more_container_sm_button" aria-label="More" ng-click="production.IsOpen=!production.IsOpen">
-              <md-icon ng-if="!production.IsOpen" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_more_vert_48px.svg" class="production_more_container_sm_button_icon"></md-icon>
-              <md-icon ng-if="production.IsOpen" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_more_horiz_48px.svg" class="production_more_container_sm_button_icon"></md-icon>
-            </md-button>
           </li>
         </ul>
       </div>
@@ -106,6 +104,34 @@
   </div-->
 
   <div layout="column" id="aboutus">
+    <div class="md-display-1 block_title">
+      <h1>{{ 'MENU.ABOUTUS' | translate }}</h1>
+    </div>
+    <div layout="row" layout-align="space-around center">
+      <md-card flex="auto" flex-gt-md="30">
+        <img src="images/team/Christian.png" class="md-card-image" alt="Christian">
+        <md-card-content>
+          <h2 class="md-title team_username">Christian</h2>
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+            two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+          </p>
+        </md-card-content>
+      </md-card>
+      <md-card flex="auto" flex-gt-md="30">
+        <img src="images/team/Simon.jpg" class="md-card-image" alt="Simon">
+        <md-card-content>
+          <h2 class="md-title team_username">Simon</h2>
+          <p>
+            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+            two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+          </p>
+        </md-card-content>
+      </md-card>
+    </div>
+  </div>
+
+  <!-- div layout="column" id="aboutus">
     <div class="md-display-1 block_title">
       <h1>About us</h1>
     </div>
@@ -208,120 +234,88 @@
         </div>
       </md-content>
     </div>
-
-    <!-- md-tabs id="aboutus_block_content_tabs" md-swipe-content>
-      <md-tab label="PulseTotem">
-          <h1 class="md-display-1">PulseTotem</h1>
-          <p>
-            Les systèmes d'affichages dynamiques sont aujourd'hui en plein essor et pratiquement omniprésents : la partie visible de ces systèmes sont les écrans que l'on retrouve aussi bien dans les gares ou les aéroports que dans les universités et les entreprises.
-            Cependant ces systèmes sont fondés sur des principes de communication antérieurs à l'ère du Web 2.0 et ne permettent pas de profiter de l'ensemble des contenus générés directement par les utilisateurs.
-          </p>
-          <br/>
-          <p>
-            Ainsi l'essor des réseaux sociaux et de l'information disponible en temps réel et géolocalisée nous pousse à imaginer une nouvelle forme de communication sur écran.
-            Nous proposons ainsi une solution logicielle (en mode SaaS) permettant de créer et gérer son affichage dynamique en intégrant aussi bien des contenus informatifs traditionnels (textes, images, vidéos) que des informations temps réels et interactives provenant de différentes sources.
-            Nous souhaitons ainsi engager davantage les spectateurs dans les informations diffusées à l'écran, garantir la fraîcheur de l'information et faciliter la gestion d'un parc d'écrans.
-          </p>
-          <br/>
-          <p>
-            Enfin, les écrans étant de plus en plus présents autour de nous, il nous semble nécessaire de repenser la relation que les usagers ont avec ces différents écrans.
-            Nous proposons pour cela d'améliorer l'expérience utilisateur par l'ajout d'interactions directs entre l'écran et l'usager, en proposant à ce dernier de prendre le contrôle de l'écran ou encore de récupérer des informations fournies par l'écran, avec son smartphone, une tablette, l'interaction tactile, l'interaction gestuelle ou encore l'interaction vocale.
-          </p>
-      </md-tab>
-      <md-tab label="Team">
-          <h1 class="md-display-1">Team</h1>
-          <div layout="row" layout-align="space-around center">
-            <md-card flex="auto" flex-gt-md="30">
-              <img src="images/team/Christian.png" class="md-card-image" alt="Christian">
-              <md-card-content>
-                <h2 class="md-title team_username">Christian</h2>
-                <p>
-                  The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                  two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                </p>
-              </md-card-content>
-            </md-card>
-            <md-card flex="auto" flex-gt-md="30">
-              <img src="images/team/Simon.jpg" class="md-card-image" alt="Simon">
-              <md-card-content>
-                <h2 class="md-title team_username">Simon</h2>
-                <p>
-                  The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                  two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-                </p>
-              </md-card-content>
-            </md-card>
-          </div>
-      </md-tab>
-      <md-tab label="Where to find us ?">
-          <div layout layout-sm="column">
-            <div flex="20">
-              <h1 class="md-display-1">Where to find us ?</h1>
-              <p>Business Pole</p>
-              <p>1047 Route des Dolines - Allee Pierre Ziller</p>
-              <p>06900 Valbonne Sophia-Antipolis</p>
-              <p>France</p>
-              <br/>
-              <p>
-                Accompagné et hébergé par <a href="http://www.incubateurpacaest.org">l'Incubateur Paca-Est</a>
-                <img src="images/logos/ipe_logo.jpg" aria-label="Logo Incubateur Paca-Est" class="ipe_logo" />
-              </p>
-            </div>
-            <div flex></div>
-            <div flex="75">
-              <iframe src="https://mapsengine.google.com/map/embed?mid=zLgURc0UvE04.kGH3kkOlb8yE" width="100%" height="480px"></iframe>
-            </div>
-          </div>
-      </md-tab>
-      <md-tab label="Rewards">
-        <h1 class="md-display-1">Rewards</h1>
-            <div layout="row" ng-repeat="reward in rewards">
-              <img ng-src="{{reward.logo}}" class="md-avatar rewards_logo" alt="{{reward.name}}" />
-              <div class="rewards_description">
-                <h2>{{ reward.name }}</h2>
-                <p>{{reward.description}}</p>
-              </div>
-            </div>
-      </md-tab>
-    </md-tabs -->
-  </div>
+  </div -->
   <div layout="column" id="contactus">
     <div class="md-display-1 block_title">
-      <h1>Contact us</h1>
+      <h1>{{ 'MENU.CONTACTUS' | translate }}</h1>
     </div>
-    <md-content layout-padding>
-      <form name="contactForm">
-        <div layout layout-sm="column">
+    <div layout layout-sm="column">
+      <md-content flex="60">
+        <form name="contactForm">
+          <div layout layout-sm="column">
+            <md-input-container flex>
+              <label>{{'CONTACTUS.FIRSTNAME' | translate}}</label>
+              <input ng-model="contact.firstName" >
+            </md-input-container>
+            <md-input-container flex>
+              <label>{{'CONTACTUS.LASTNAME' | translate}}</label>
+              <input ng-model="theMax">
+            </md-input-container>
+            <md-input-container flex>
+              <label>{{'CONTACTUS.EMAIL' | translate}}</label>
+              <input ng-model="contact.email" type="email">
+            </md-input-container>
+          </div>
+          <div layout layout-sm="column">
+            <md-input-container flex>
+              <label>{{'CONTACTUS.FUNCTION' | translate}}</label>
+              <input ng-model="contact.function">
+            </md-input-container>
+            <md-input-container flex>
+              <label>{{'CONTACTUS.COMPANY' | translate}}</label>
+              <input ng-model="contact.company">
+            </md-input-container>
+          </div>
           <md-input-container flex>
-            <label>First name</label>
-            <input ng-model="contact.firstName" >
+            <label>{{'CONTACTUS.MESSAGE' | translate}}</label>
+            <textarea ng-model="contact.message" columns="1" rows="5"></textarea>
           </md-input-container>
-          <md-input-container flex>
-            <label>Last Name</label>
-            <input ng-model="theMax">
-          </md-input-container>
-          <md-input-container flex>
-            <label>Email</label>
-            <input ng-model="contact.email" type="email">
-          </md-input-container>
-        </div>
-        <div layout layout-sm="column">
-          <md-input-container flex>
-            <label>Function</label>
-            <input ng-model="contact.function">
-          </md-input-container>
-          <md-input-container flex>
-            <label>Company</label>
-            <input ng-model="contact.company">
-          </md-input-container>
-        </div>
-        <md-input-container flex>
-          <label>Message</label>
-          <textarea ng-model="contact.message" columns="1" rows="5"></textarea>
-        </md-input-container>
-        <md-button class="md-raised contact_form_button">Send !</md-button>
-      </form>
-    </md-content>
+          <md-button class="md-raised contact_form_button">{{'CONTACTUS.SEND' | translate}} !</md-button>
+        </form>
+      </md-content>
+      <div flex="40" class="contactus_where">
+        <md-list ng-cloak>
+          <md-list-item>
+            <md-icon md-svg-icon="./bower_components/material-design-icons/communication/svg/production/ic_email_48px.svg"></md-icon>
+            <p>contact@pulsetotem.fr</p>
+          </md-list-item>
+          <md-list-item>
+            <md-icon class="contactus_icon" md-svg-icon="./images/social/twitter.svg"></md-icon>
+            <p><a href="http://twitter.com/pulsetotem">@pulsetotem</a></p>
+          </md-list-item>
+          <md-list-item>
+            <md-icon class="contactus_icon" md-svg-icon="./images/social/linkedin.svg"></md-icon>
+            <p><a href="https://www.linkedin.com/company/pulsetotem">https://www.linkedin.com/company/pulsetotem</a></p>
+          </md-list-item>
+          <md-list-item>
+            <md-icon class="contactus_icon" md-svg-icon="./images/social/facebook.svg"></md-icon>
+            <p><a href="http://www.facebook.com/pulsetotem">http://www.facebook.com/pulsetotem</a></p>
+          </md-list-item>
+          <md-list-item>
+            <md-icon md-svg-icon="./bower_components/material-design-icons/maps/svg/production/ic_place_48px.svg"></md-icon>
+            <p>
+              Business Pole, Bat. B - Entrée A - Etage 2<br/>
+              1047 Route des Dolines - Allee Pierre Ziller<br/>
+              06900 Valbonne Sophia-Antipolis<br/>
+              France
+            </p>
+          </md-list-item>
+        </md-list>
+        <iframe src="https://mapsengine.google.com/map/embed?mid=zLgURc0UvE04.kGH3kkOlb8yE" width="100%" height="300px"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div layout="column" id="supporters">
+    <div class="md-display-1 block_title">
+      <h1>{{ 'MENU.SUPPORTERS' | translate }}</h1>
+    </div>
+    <md-grid-list
+      md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4" md-row-height="3:2"
+      md-gutter="1%" md-gutter-gt-sm="3%" id="solution_av_list">
+      <md-grid-tile ng-repeat="supporter in supporters" class="supporter" style="background-image: url('{{supporter.logo}}')" ng-cloak>
+      </md-grid-tile>
+    </md-grid-list>
   </div>
 
   <div layout="row" layout-align="space-around start" id="footer_block">

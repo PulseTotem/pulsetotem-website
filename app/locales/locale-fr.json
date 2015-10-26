@@ -8,7 +8,9 @@
         "SOLUTION": "Solution",
         "DONE_WORK": "Réalisations",
         "ABOUTUS": "A propos",
-        "CONTACTUS": "Contactez Nous !",
+        "WHERE" : "Où nous trouver ?",
+        "CONTACTUS": "Contactez Nous",
+        "SUPPORTERS": "Merci pour votre soutien !",
         "BLOG" : "Blog"
     },
     "MAIN" : {
@@ -29,6 +31,7 @@
         "SDI_DESCRIPTION" : "Description"
     },
     "HOME": {
+      "SUBTITLE" : "Systèmes interactifs et affichages dynamiques",
       "MULTICONTENT": {
         "TITLE": "Gagnez du temps sur votre communication",
         "SUBTITLE": "Avec PulseTotem, centralisez vos contenus et diffusez les sur un écran"
@@ -64,7 +67,7 @@
           "DESCRIPTION": "Engagez vos usagers en leur permettant d'interagir directement avec vos écrans via leur smartphone, par le geste ou encore par la parole !"
         },
         "AUTOMATED": {
-          "TITLE": "Recherche de contenus",
+          "TITLE": "Recherche de contenus / Réseaux sociaux",
           "DESCRIPTION": "Utilisez notre plateforme pour récupérer de manière automatisée les contenus que vous avez déjà réalisés ailleurs !"
         },
         "DYNAMICEVENTS": {
@@ -76,7 +79,7 @@
           "DESCRIPTION": "Profitez des avantages de personnalisation et des interfaces simplifiées de notre solution et adaptez la diffusion à votre image !"
         },
         "FULLWEB": {
-          "TITLE": "Full Web",
+          "TITLE": "Full Web / Haute disponibilité",
           "DESCRIPTION": "Simplifiez vous la vie : notre solution ne nécessite qu'un navigateur web pour être utilisée et administrée !"
         }
       }
@@ -84,10 +87,14 @@
     "PRODUCTIONS" : {
       "DESCRIPTION" : "a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes"
     },
-    "ABOUT_US" : {
-      "TEAM" : "L'équipe",
-      "WHERE" : "Où nous trouver ?",
-      "AWARDS" : "Récompenses"
+    "CONTACTUS" : {
+      "FIRSTNAME" : "Prénom",
+      "LASTNAME" : "Nom",
+      "EMAIL" : "Email",
+      "COMPANY" : "Entreprise",
+      "FUNCTION" : "Fonction",
+      "MESSAGE" : "Message",
+      "SEND" : "Envoyer"
     },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Blog : Articles récents"

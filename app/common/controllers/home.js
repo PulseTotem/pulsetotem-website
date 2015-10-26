@@ -99,56 +99,36 @@ angular.module('PulseTotemCommon')
       $scope.productionsArray.push({
         image: "images/productions/fetedelascience.jpg",
         title: "Fête de la science 2015",
-        subtitle: "Stand et démonstration d'une prise de contrôle de l'écran avec une tablette pour laisser un message dans notre livre d'interactif",
-        description: "3 zones avec les tweets de l'évènement dans la zone de droite, la diffusion des messages de notre livre d'or dans la zone à gauche et la prise de contrôle elle-même dans la zone du haut.",
-        IsOpen: false
+        subtitle: "Stand et démonstration d'une prise de contrôle de l'écran avec une tablette pour laisser un message dans notre livre d'interactif"
       });
       $scope.productionsArray.push({
         image: "images/productions/mangameshow.jpg",
         title: "MangameShow 2015",
-        subtitle: "Stand et démonstration d'une prise de contrôle de l'écran avec son smartphone, pour déclencher la prise d'une photo par l'écran lui-même",
-        description: "3 zones avec des vidéos promotionnelles et les tweets de l'évènement dans les 2 zones à droite, la diffusion des photos prises avec l'écran et la prise de contrôle elle-même dans la zone principale.",
-        IsOpen: false
+        subtitle: "Stand et démonstration d'une prise de contrôle de l'écran avec son smartphone, pour déclencher la prise d'une photo par l'écran lui-même"
       });
       $scope.productionsArray.push({
         image: "images/productions/pandapero.jpg",
         title: "Panda'Pero #3",
-        subtitle: "Démonstration à l'occasion du Panda'Pero 3ème édition, organisé par Panda'Events",
-        description: "4 zones avec des vidéos promotionnelles et les tweets de l'évènement dans les 2 zones à gauche, des slides promotionnels dans la zone principale à droite, et les logos des sponsors de la soirée dans la zone du bas.",
-        IsOpen: false
+        subtitle: "Démonstration à l'occasion du Panda'Pero 3ème édition, organisé par Panda'Events"
       });
       $scope.productionsArray.push({
         image: "images/productions/choralies2013.jpg",
         title: "Les Choralies 2013",
-        subtitle: "9 écrans (dont 2 géants) sur 10 jours à Vaison-La-Romaine, 4000 participants",
-        description: "Diffusion de différents types d'informations, photos, vidéos, affiches, annonces, calendrier des animations en cours etc. ",
-        IsOpen: false
+        subtitle: "9 écrans (dont 2 géants) sur 10 jours à Vaison-La-Romaine, 4000 participants"
       });
 
-      $scope.aboutus_navbar_open = true;
-      $scope.aboutus_navbar_menu = "pulsetotem";
-      $scope.toggleLeftAboutMenu = function(newMenu) {
-        $scope.aboutus_navbar_menu = newMenu;
-        if($scope.screenIsSmall) {
-          $scope.aboutus_navbar_open = false;
-        }
-      };
-
-      $scope.rewards = [];
-      $scope.rewards.push({
-        logo: 'images/rewards/LogoFondationUnice.png',
-        name: "Fondation Unice 2015",
-        description: "Lauréat du concours \"Création/Reprise d'entreprise\" 2015"
+      $scope.supporters = [];
+      $scope.supporters.push({
+        logo: 'images/rewards/LogoFondationUnice.png'
       });
-      $scope.rewards.push({
-        logo: 'images/rewards/ilab2015.jpg',
-        name: "iLab 2015 - Pepite",
-        description: "Lauréat du prix Pepite du concours iLab 2015 du ministère de l'enseignement supérieur et de la recherche"
+      $scope.supporters.push({
+        logo: 'images/rewards/ilab2015.jpg'
       });
-      $scope.rewards.push({
-        logo: 'images/rewards/logo-innovact-center.png',
-        name: "Innovact 2014",
-        description: "Finaliste campus du forum Innovact 2014"
+      $scope.supporters.push({
+        logo: 'images/rewards/logo-innovact-center.png'
+      });
+      $scope.supporters.push({
+        logo: 'images/logos/ipe_logo.jpg'
       });
 
     setTimeout(function () {

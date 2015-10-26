@@ -8,7 +8,9 @@
         "SOLUTION": "Solution",
         "DONE_WORK": "Productions",
         "ABOUTUS": "About Us",
+        "WHERE" : "Where to find us ?",
         "CONTACTUS": "Contact Us",
+        "SUPPORTERS": "Thanks for your support !",
         "BLOG" : "Blog"
     },
     "MAIN" : {
@@ -29,6 +31,7 @@
         "SDI_DESCRIPTION" : "Description"
     },
     "HOME": {
+      "SUBTITLE" : "Dynamic systems and digital signage",
       "MULTICONTENT": {
         "TITLE": "Gain time on your communications",
         "SUBTITLE": "With PulseTotem, centralize and broadcast your concents on a screen"
@@ -84,10 +87,14 @@
     "PRODUCTIONS" : {
       "DESCRIPTION" : "a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes"
     },
-    "ABOUT_US" : {
-      "TEAM" : "Team",
-      "WHERE" : "Where to find us ?",
-      "AWARDS" : "Awards"
+    "CONTACTUS" : {
+      "FIRSTNAME" : "First Name",
+      "LASTNAME" : "Last Name",
+      "EMAIL" : "Email",
+      "COMPANY" : "Company",
+      "FUNCTION" : "Function",
+      "MESSAGE" : "Message",
+      "SEND" : "Send"
     },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Recent Blog Posts"
