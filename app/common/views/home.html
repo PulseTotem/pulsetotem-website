@@ -1,4 +1,5 @@
-<div data-sr-container='{ "reset":true }'>
+<!-- div data-sr-container='{ "reset":true }' -->
+<div>
   <div layout="column" id="home">
     <div layout="column" id="pp_block_content">
       <div layout="row" ng-class="{'pp_block_subtitle' : scroll2 <= 150, 'pp_block_subtitle pp_block_subtitle_none' : scroll2 > 150}" scroll-position="scroll2">
@@ -36,23 +37,23 @@
         <h1>{{ 'MENU.SOLUTION' | translate }}</h1>
         <h3><span>PulseTotem</span> {{'SOLUTION.DESCRIPTION' | translate}}.</h3>
       </div>
-      <md-grid-list
-          md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4" md-row-height="3:2"
-          md-gutter="1%" md-gutter-gt-sm="3%" id="solution_av_list">
-          <md-grid-tile ng-class="{'av_container' : $even, 'av_container av_container_bis' : $odd}" ng-repeat="av in avRow1" ng-mouseenter="av.showDescription=true" ng-mouseleave="av.showDescription=false">
-            <md-icon ng-if="!av.showDescription" class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
-            <md-icon ng-if="!av.showDescription && screenIsSmall" class="av_details" md-svg-icon="./bower_components/material-design-icons/image/svg/production/ic_loupe_48px.svg" ng-click="av.showDescription=true"></md-icon>
-            <md-grid-tile-footer ng-if="!av.showDescription" class="av_tile_footer">
-              <span class="md-title" translate="{{av.title}}"></span>
-            </md-grid-tile-footer>
-            <md-grid-tile-header ng-if="av.showDescription">
-              <md-icon class="av_icon_details" md-svg-icon="{{av.icon}}"></md-icon><span class="md-title" translate="{{av.title}}"></span>
-            </md-grid-tile-header>
+      <div layout="row" layout-sm="column" layout-align="space-around center" layout-margin layout-wrap>
+        <div class="av_container" ng-repeat="av in avRow1" flex="100" flex-gt-sm="40" flex-gt-md="20" ng-mouseenter="av.showDescription=true" ng-mouseleave="av.showDescription=false">
+          <md-icon ng-if="!av.showDescription" class="av_icon" md-svg-icon="{{av.icon}}"></md-icon>
+          <md-icon ng-if="!av.showDescription && screenIsSmall" class="av_details" md-svg-icon="./bower_components/material-design-icons/image/svg/production/ic_loupe_48px.svg" ng-click="av.showDescription=true"></md-icon>
+
+          <div ng-if="!av.showDescription" class="av_tile_footer">
+            <span class="av_title" translate="{{av.title}}"></span>
+          </div>
+          <div ng-if="av.showDescription" class="av_tile_header">
+            <md-icon class="av_icon_details" md-svg-icon="{{av.icon}}"></md-icon>
+            <span class="av_title" translate="{{av.title}}"></span>
             <md-icon ng-if="av.showDescription && screenIsSmall" class="av_details_close" md-svg-icon="./bower_components/material-design-icons/navigation/svg/production/ic_close_48px.svg" ng-click="av.showDescription=false"></md-icon>
-            <md-content flex layout-padding ng-if="av.showDescription" translate="{{av.description}}">
-            </md-content>
-          </md-grid-tile>
-        </md-grid-list>
+          </div>
+          <div ng-if="av.showDescription" translate="{{av.description}}" class="av_description">
+          </div>
+        </div>
+      </div>
     <!-- div data-sr='wait 0.2s scale up 20%' layout="column" class="contact_block">
       <h1 class="md-title contact_title">Contact Us !</h1>
       <div layout="row" layout-align="center" class="contact_mini_form">
@@ -67,19 +68,19 @@
 
   <div layout="column" id="productions">
     <div class="md-display-1 block_title">
-      <h1>{{ 'MENU.DONE_WORK' | translate }}</h1>
+      <h1>{{ 'MENU.PRODUCTIONS' | translate }}</h1>
       <h3><span>PulseTotem</span> {{ 'PRODUCTIONS.DESCRIPTION' | translate }}.</h3>
     </div>
     <div layout="column" id="productions_block_content">
       <div layout="row" class="productions_carousel_container">
         <ul rn-carousel rn-carousel-index="productionsCarouselIndex" rn-carousel-auto-slide=10 rn-carousel-controls-allow-loop class="productions_carousel">
           <li ng-repeat="production in productionsArray">
-            <div layout layout-fill layout-sm="column">
-              <div class="production_container" flex="30" flex-sm="100">
+            <div layout="column" layout-fill layout-gt-md="row">
+              <div class="production_container" flex="100" flex-gt-md="30">
                 <div class="production_title">{{production.title}}</div>
                 <div class="production_subtitle">{{production.subtitle}}</div>
               </div>
-              <div flex="70" flex-sm="100" ng-class="{'production_background' : !screenIsSmall, 'production_background production_background_sm' : screenIsSmall}" style="background-image: url('{{production.image}}')" ng-cloak>
+              <div flex="100" flex-gt-md="70" ng-class="{'production_background' : !screenIsSmall, 'production_background production_background_sm' : screenIsSmall}" style="background-image: url('{{production.image}}')" ng-cloak>
               </div>
             </div>
           </li>
@@ -239,8 +240,8 @@
     <div class="md-display-1 block_title">
       <h1>{{ 'MENU.CONTACTUS' | translate }}</h1>
     </div>
-    <div layout layout-sm="column">
-      <md-content flex="60">
+    <div layout="column" layout-gt-md="row">
+      <md-content flex="100" flex-gt-md="60">
         <form name="contactForm">
           <div layout layout-sm="column">
             <md-input-container flex>
@@ -273,7 +274,7 @@
           <md-button class="md-raised contact_form_button">{{'CONTACTUS.SEND' | translate}} !</md-button>
         </form>
       </md-content>
-      <div flex="40" class="contactus_where">
+      <div flex="100" flex-gt-md="40" class="contactus_where">
         <md-list ng-cloak>
           <md-list-item>
             <md-icon md-svg-icon="./bower_components/material-design-icons/communication/svg/production/ic_email_48px.svg"></md-icon>
@@ -285,23 +286,23 @@
           </md-list-item>
           <md-list-item>
             <md-icon class="contactus_icon" md-svg-icon="./images/social/linkedin.svg"></md-icon>
-            <p><a href="https://www.linkedin.com/company/pulsetotem">https://www.linkedin.com/company/pulsetotem</a></p>
+            <p><a href="https://www.linkedin.com/company/pulsetotem">company/pulsetotem</a></p>
           </md-list-item>
           <md-list-item>
             <md-icon class="contactus_icon" md-svg-icon="./images/social/facebook.svg"></md-icon>
-            <p><a href="http://www.facebook.com/pulsetotem">http://www.facebook.com/pulsetotem</a></p>
+            <p><a href="http://www.facebook.com/pulsetotem">@pulsetotem</a></p>
           </md-list-item>
           <md-list-item>
             <md-icon md-svg-icon="./bower_components/material-design-icons/maps/svg/production/ic_place_48px.svg"></md-icon>
             <p>
               Business Pole, Bat. B - Entrée A - Etage 2<br/>
-              1047 Route des Dolines - Allee Pierre Ziller<br/>
+              1047 Route des Dolines - Allée Pierre Ziller<br/>
               06900 Valbonne Sophia-Antipolis<br/>
               France
             </p>
           </md-list-item>
         </md-list>
-        <iframe src="https://mapsengine.google.com/map/embed?mid=zLgURc0UvE04.kGH3kkOlb8yE" width="100%" height="300px"></iframe>
+        <iframe src="https://mapsengine.google.com/map/embed?mid=zLgURc0UvE04.kGH3kkOlb8yE" width="90%" height="300px"></iframe>
       </div>
     </div>
   </div>
@@ -310,26 +311,31 @@
     <div class="md-display-1 block_title">
       <h1>{{ 'MENU.SUPPORTERS' | translate }}</h1>
     </div>
-    <md-grid-list
-      md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4" md-row-height="3:2"
-      md-gutter="1%" md-gutter-gt-sm="3%" id="solution_av_list">
-      <md-grid-tile ng-repeat="supporter in supporters" class="supporter" style="background-image: url('{{supporter.logo}}')" ng-cloak>
-      </md-grid-tile>
-    </md-grid-list>
+    <div class="supporters_list" layout="row" layout-sm="column" layout-align="space-around center" layout-margin layout-wrap>
+      <div ng-repeat="supporter in supporters" class="supporter" style="background-image: url('{{supporter.logo}}')" flex="100" flex-gt-sm="40" flex-gt-md="20">
+      </div>
+    </div>
   </div>
 
   <div layout="row" layout-align="space-around start" id="footer_block">
-    <div layout="column">
-      <h1>Information</h1>
+    <div flex>
+      <p>Accompagné et hébergé par l'Incubateur Paca-Est</p>
+      <p>1047 Route des Dolines, Allée Pierre Ziller, 06900 Valbonne Sophia-Antipolis</p>
+      <p>&copy; 2015 PulseTotem</p>
     </div>
-    <div layout="column">
-      <h1>Follow us</h1>
+    <div flex>
+      <md-button class="md-icon-button" aria-label="Email" href="mailto:contact@pulsetotem.fr" target="_blank">
+        <md-icon class="contactus_icon" md-svg-icon="./bower_components/material-design-icons/communication/svg/production/ic_email_48px.svg"></md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="Twitter" href="http://twitter.com/pulsetotem" target="_blank">
+        <md-icon class="contactus_icon" md-svg-icon="./images/social/twitter.svg"></md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="LinkedIn" href="https://www.linkedin.com/company/pulsetotem" target="_blank">
+        <md-icon class="contactus_icon" md-svg-icon="./images/social/linkedin.svg"></md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="Facebook" href="http://www.facebook.com/pulsetotem" target="_blank">
+        <md-icon class="contactus_icon" md-svg-icon="./images/social/facebook.svg"></md-icon>
+      </md-button>
     </div>
-    <div layout="column">
-      <h1>{{'FOOTER.RECENT_BLOG_POSTS' | translate}}</h1>
-    </div>
-  </div>
-  <div layout="column" id="footer_bottom">
-    <p>&copy; 2015 PulseTotem - All Rights Reserved</p>
   </div>
 </div>

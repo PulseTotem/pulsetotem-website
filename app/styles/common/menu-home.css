@@ -8,6 +8,10 @@
   border-bottom: 1px solid #37ABC8;
 }
 
+.home_toolbar .md-button:last-child {
+  margin-right: 8px !important;
+}
+
 .pulsetotem_logo {
   height: 100%;
   cursor: pointer;

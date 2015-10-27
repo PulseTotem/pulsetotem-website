@@ -9,9 +9,9 @@
  */
 angular.module('PulseTotemCommon')
   .controller('PulseTotemCommon.GlobalCtrl', ['$mdMedia', '$scope', function ($mdMedia, $scope) {
-    $scope.$watch(function() { return $mdMedia('max-width: 800px'); }, function(isSmall) {
+    $scope.$watch(function() { return $mdMedia('max-width: 960px'); }, function(isSmall) {
       $scope.screenIsSmall = isSmall;
     });
-    $scope.screenIsSmall = $mdMedia('max-width: 800px');
+    $scope.screenIsSmall = $mdMedia('max-width: 960px');
 
   }]);

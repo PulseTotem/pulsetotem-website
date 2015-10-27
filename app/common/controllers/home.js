@@ -13,14 +13,6 @@ angular.module('PulseTotemCommon')
     $scope.ppArray = [];
 
     $scope.ppArray.push({
-      image: 'images/home/multi-content.jpg',
-      title: 'HOME.MULTICONTENT.TITLE',
-      subtitle: 'HOME.MULTICONTENT.SUBTITLE',
-      blog: null,
-      contactus: false
-    });
-
-    $scope.ppArray.push({
       image: 'images/home/communaute.jpg',
       title: 'HOME.COMMUNITY.TITLE',
       subtitle: 'HOME.COMMUNITY.SUBTITLE',
@@ -37,6 +29,14 @@ angular.module('PulseTotemCommon')
     });
 
     $scope.ppArray.push({
+      image: 'images/home/multi-content.jpg',
+      title: 'HOME.MULTICONTENT.TITLE',
+      subtitle: 'HOME.MULTICONTENT.SUBTITLE',
+      blog: null,
+      contactus: false
+    });
+
+    $scope.ppArray.push({
       image: 'images/home/dynamiser.jpg',
       title: 'HOME.DYNAMIZE.TITLE',
       subtitle: 'HOME.DYNAMIZE.SUBTITLE',
@@ -47,20 +47,6 @@ angular.module('PulseTotemCommon')
     $scope.avRow1 = [];
 
     $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/action/svg/production/ic_history_48px.svg',
-      title: 'SOLUTION.FEATURES.REALTIME.TITLE',
-      description: 'SOLUTION.FEATURES.REALTIME.DESCRIPTION',
-      showDescription: false
-    });
-
-    $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/file/svg/production/ic_cloud_circle_48px.svg',
-      title: 'SOLUTION.FEATURES.CENTRALIZATION.TITLE',
-      description: 'SOLUTION.FEATURES.CENTRALIZATION.DESCRIPTION',
-      showDescription: false
-    });
-
-    $scope.avRow1.push({
       icon: './bower_components/material-design-icons/av/svg/production/ic_games_48px.svg',
       title: 'SOLUTION.FEATURES.INTERACTION.TITLE',
       description: 'SOLUTION.FEATURES.INTERACTION.DESCRIPTION',
@@ -68,9 +54,23 @@ angular.module('PulseTotemCommon')
     });
 
     $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/action/svg/production/ic_history_48px.svg',
+      title: 'SOLUTION.FEATURES.REALTIME.TITLE',
+      description: 'SOLUTION.FEATURES.REALTIME.DESCRIPTION',
+      showDescription: false
+    });
+
+    $scope.avRow1.push({
       icon: './bower_components/material-design-icons/content/svg/production/ic_archive_48px.svg',
-      title: 'SOLUTION.FEATURES.AUTOMATED.TITLE',
-      description: 'SOLUTION.FEATURES.AUTOMATED.DESCRIPTION',
+      title: 'SOLUTION.FEATURES.SOCIAL.TITLE',
+      description: 'SOLUTION.FEATURES.SOCIAL.DESCRIPTION',
+      showDescription: false
+    });
+
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/file/svg/production/ic_cloud_circle_48px.svg',
+      title: 'SOLUTION.FEATURES.CENTRALIZATION.TITLE',
+      description: 'SOLUTION.FEATURES.CENTRALIZATION.DESCRIPTION',
       showDescription: false
     });
 
@@ -92,6 +92,13 @@ angular.module('PulseTotemCommon')
       icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
       title: 'SOLUTION.FEATURES.FULLWEB.TITLE',
       description: 'SOLUTION.FEATURES.FULLWEB.DESCRIPTION',
+      showDescription: false
+    });
+
+    $scope.avRow1.push({
+      icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
+      title: 'SOLUTION.FEATURES.TEAM.TITLE',
+      description: 'SOLUTION.FEATURES.TEAM.DESCRIPTION',
       showDescription: false
     });
 

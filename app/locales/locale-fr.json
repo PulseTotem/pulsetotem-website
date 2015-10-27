@@ -6,7 +6,7 @@
         "FRENCH" : "Fran&ccedil;ais",
         "HOME": "Accueil",
         "SOLUTION": "Solution",
-        "DONE_WORK": "Réalisations",
+        "PRODUCTIONS": "Réalisations",
         "ABOUTUS": "A propos",
         "WHERE" : "Où nous trouver ?",
         "CONTACTUS": "Contactez Nous",
@@ -31,18 +31,18 @@
         "SDI_DESCRIPTION" : "Description"
     },
     "HOME": {
-      "SUBTITLE" : "Systèmes interactifs et affichages dynamiques",
+      "SUBTITLE" : "Réinventons l'affichage dynamique ensemble !",
       "MULTICONTENT": {
         "TITLE": "Gagnez du temps sur votre communication",
-        "SUBTITLE": "Avec PulseTotem, centralisez vos contenus et diffusez les sur un écran"
+        "SUBTITLE": "Centralisez vos contenus existants et automatisez leur diffusion"
       },
       "COMMUNITY": {
         "TITLE": "Renforcez le dynamisme de vos écrans",
-        "SUBTITLE": "Laissez votre communauté s'exprimer en temps réel sur vos écrans"
+        "SUBTITLE": "Avec PulseTotem, Laissez votre communauté s'exprimer en temps réel sur vos écrans"
       },
       "INTERACTION": {
-        "TITLE": "Engagez votre audience",
-        "SUBTITLE": "Impliquez vos utilisateurs avec de l'interaction"
+        "TITLE": "Améliorez votre visibilité, Engagez votre audience",
+        "SUBTITLE": "Impliquez vos utilisateurs grâce à de multiples interactions possibles"
       },
       "DYNAMIZE": {
         "TITLE": "Différenciez vous, soyez innovants dans vos communications numériques",
@@ -54,33 +54,37 @@
     "SOLUTION": {
       "DESCRIPTION" : "est une solution logicielle d'affichage dynamique s'appuyant sur des informations en temps réel, en interaction avec vos utilisateurs et fortement personnalisable pour s'adapter à vos besoins",
       "FEATURES": {
+        "INTERACTION": {
+          "TITLE": "Interactions multiples",
+          "DESCRIPTION": "Engagez vos usagers en leur permettant d'interagir directement avec vos écrans via leur smartphone, par le geste ou encore par la parole !"
+        },
         "REALTIME": {
           "TITLE": "Temps réel",
           "DESCRIPTION": "Conservez votre audience réceptive en diffusant les contenus les plus récents en temps réel !"
+        },
+        "SOCIAL": {
+          "TITLE": "Réseaux sociaux",
+          "DESCRIPTION": "Utilisez notre plateforme pour récupérer de manière automatisée les contenus de votre communauté !"
         },
         "CENTRALIZATION": {
           "TITLE": "Centralisation des contenus",
           "DESCRIPTION": "Fini le casse tête pour la gestion de vos différents médias : gérez tous vos contenus depuis une unique plateforme !"
         },
-        "INTERACTION": {
-          "TITLE": "Interactions directes",
-          "DESCRIPTION": "Engagez vos usagers en leur permettant d'interagir directement avec vos écrans via leur smartphone, par le geste ou encore par la parole !"
-        },
-        "AUTOMATED": {
-          "TITLE": "Recherche de contenus / Réseaux sociaux",
-          "DESCRIPTION": "Utilisez notre plateforme pour récupérer de manière automatisée les contenus que vous avez déjà réalisés ailleurs !"
-        },
         "DYNAMICEVENTS": {
           "TITLE": "Dynamisation des événements",
-          "DESCRIPTION": "Donnez un second souffle à vos événements en diffusant en direct les réactions de votre communauté sur écran et en les invitant à participer !"
+          "DESCRIPTION": "Faire participer votre communauté, permettre à vos invités d'interagir avec vos écrans, autant d'ingrédients à votre disposition pour booster vos évènements !"
         },
         "CUSTOMIZATION": {
           "TITLE": "Personnalisation",
-          "DESCRIPTION": "Profitez des avantages de personnalisation et des interfaces simplifiées de notre solution et adaptez la diffusion à votre image !"
+          "DESCRIPTION": "Profitez des avantages de personnalisation et des interfaces simplifiées de notre solution pour adapter la diffusion à votre image !"
         },
         "FULLWEB": {
-          "TITLE": "Full Web / Haute disponibilité",
+          "TITLE": "Haute disponibilité",
           "DESCRIPTION": "Simplifiez vous la vie : notre solution ne nécessite qu'un navigateur web pour être utilisée et administrée !"
+        },
+        "TEAM": {
+          "TITLE": "L'équipe PulseTotem",
+          "DESCRIPTION": "Ne perdez plus de temps, faites vous accompagner par notre équipe pour booster votre communication !"
         }
       }
     },

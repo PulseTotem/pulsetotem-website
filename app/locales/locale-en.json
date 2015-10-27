@@ -6,7 +6,7 @@
         "FRENCH": "Fran&ccedil;ais",
         "HOME": "Home",
         "SOLUTION": "Solution",
-        "DONE_WORK": "Productions",
+        "PRODUCTIONS": "Productions",
         "ABOUTUS": "About Us",
         "WHERE" : "Where to find us ?",
         "CONTACTUS": "Contact Us",
@@ -31,7 +31,7 @@
         "SDI_DESCRIPTION" : "Description"
     },
     "HOME": {
-      "SUBTITLE" : "Dynamic systems and digital signage",
+      "SUBTITLE" : "Imagine future of digital signage together !",
       "MULTICONTENT": {
         "TITLE": "Gain time on your communications",
         "SUBTITLE": "With PulseTotem, centralize and broadcast your concents on a screen"
