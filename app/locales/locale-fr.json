@@ -107,6 +107,16 @@
         "SUBTITLE": "9 écrans (dont 2 géants) sur 10 jours à Vaison-La-Romaine à l'occasion des Choralies 2013 rassemblant plus de 4000 participants"
       }
     },
+    "ABOUTUS" : {
+      "MESSAGE" : {
+        "CHRISTIAN" : "Des utilisateurs comblés, de l'interaction, encore de l'interaction, et toujours plus d'interaction ! Voici mon rêve !",
+        "SIMON" : ""
+      },
+      "QUOTE" : {
+        "CHRISTIAN" : "Que la force soit avec vous !",
+        "SIMON" : ""
+      }
+    },
     "CONTACTUS" : {
       "FIRSTNAME" : "Prénom",
       "LASTNAME" : "Nom",

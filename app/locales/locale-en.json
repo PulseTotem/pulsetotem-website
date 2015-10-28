@@ -107,6 +107,16 @@
       "SUBTITLE": "9 screens (including 2 oversized) during 10 days at Vaison-La-Romaine in France for the Choralies 2013 gathering more than 4000 participants"
     }
   },
+  "ABOUTUS" : {
+    "MESSAGE" : {
+      "CHRISTIAN" : "Users bursting with happiness, interaction, more interaction and interaction everywhere ! Here my dream !",
+      "SIMON" : ""
+    },
+    "QUOTE" : {
+      "CHRISTIAN" : "May the force be with you !",
+      "SIMON" : ""
+    }
+  },
     "CONTACTUS" : {
       "FIRSTNAME" : "First Name",
       "LASTNAME" : "Last Name",
