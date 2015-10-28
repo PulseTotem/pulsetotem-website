@@ -47,28 +47,32 @@ angular.module('PulseTotemCommon')
     $scope.avRow1 = [];
 
     $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/av/svg/production/ic_games_48px.svg',
+      //icon: './bower_components/material-design-icons/av/svg/production/ic_games_48px.svg',
+      icon: './images/solution/svg/web40.svg',
       title: 'SOLUTION.FEATURES.INTERACTION.TITLE',
       description: 'SOLUTION.FEATURES.INTERACTION.DESCRIPTION',
       showDescription: false
     });
 
     $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/action/svg/production/ic_history_48px.svg',
+      //icon: './bower_components/material-design-icons/action/svg/production/ic_history_48px.svg',
+      icon: './images/solution/svg/pc11.svg',
       title: 'SOLUTION.FEATURES.REALTIME.TITLE',
       description: 'SOLUTION.FEATURES.REALTIME.DESCRIPTION',
       showDescription: false
     });
 
     $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/content/svg/production/ic_archive_48px.svg',
+      //icon: './bower_components/material-design-icons/content/svg/production/ic_archive_48px.svg',
+      icon: './images/solution/svg/manager.svg',
       title: 'SOLUTION.FEATURES.SOCIAL.TITLE',
       description: 'SOLUTION.FEATURES.SOCIAL.DESCRIPTION',
       showDescription: false
     });
 
     $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/file/svg/production/ic_cloud_circle_48px.svg',
+      //icon: './bower_components/material-design-icons/file/svg/production/ic_cloud_circle_48px.svg',
+      icon: './images/solution/svg/marketing8.svg',
       title: 'SOLUTION.FEATURES.CENTRALIZATION.TITLE',
       description: 'SOLUTION.FEATURES.CENTRALIZATION.DESCRIPTION',
       showDescription: false
@@ -82,21 +86,24 @@ angular.module('PulseTotemCommon')
     });
 
     $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/action/svg/production/ic_build_48px.svg',
+      //icon: './bower_components/material-design-icons/action/svg/production/ic_build_48px.svg',
+      icon: './images/solution/svg/wrench1.svg',
       title: 'SOLUTION.FEATURES.CUSTOMIZATION.TITLE',
       description: 'SOLUTION.FEATURES.CUSTOMIZATION.DESCRIPTION',
       showDescription: false
     });
 
     $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
+      //icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
+      icon: './images/solution/svg/onlinestore2.svg',
       title: 'SOLUTION.FEATURES.FULLWEB.TITLE',
       description: 'SOLUTION.FEATURES.FULLWEB.DESCRIPTION',
       showDescription: false
     });
 
     $scope.avRow1.push({
-      icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
+      //icon: './bower_components/material-design-icons/av/svg/production/ic_airplay_48px.svg',
+      icon: './images/solution/svg/group41.svg',
       title: 'SOLUTION.FEATURES.TEAM.TITLE',
       description: 'SOLUTION.FEATURES.TEAM.DESCRIPTION',
       showDescription: false

@@ -31,56 +31,60 @@
         "SDI_DESCRIPTION" : "Description"
     },
     "HOME": {
-      "SUBTITLE" : "Imagine future of digital signage together !",
+      "SUBTITLE" : "Reinventing digital signage together!",
       "MULTICONTENT": {
         "TITLE": "Gain time on your communications",
-        "SUBTITLE": "With PulseTotem, centralize and broadcast your concents on a screen"
+        "SUBTITLE": "Centralize your existing contents and broadcast them automatically"
       },
       "COMMUNITY": {
         "TITLE": "Improve the reactivity of your screens",
-        "SUBTITLE": "Let your community talk in real time on your screens"
+        "SUBTITLE": "With PulseTotem, let your community express itself in real time on your screens"
       },
       "INTERACTION": {
-        "TITLE": "Catch your audience's attention",
-        "SUBTITLE": "Involve your users with interaction"
+        "TITLE": "Improve your visibility, Catch your audience's attention",
+        "SUBTITLE": "Involve your users with multiple available interactions"
       },
       "DYNAMIZE": {
         "TITLE": "Be different and innovative in your digital communications",
-        "SUBTITLE": "Contact PulseTotem's team and together let's build the solution which fit your needs"
+        "SUBTITLE": "Contact PulseTotem's team and together let's build the solution which fit YOUR needs"
       },
       "MORE" : "More",
       "CONTACTUS" : "Contact us !"
     },
     "SOLUTION": {
-      "DESCRIPTION" : "est une solution logicielle d'affichage dynamique s'appuyant sur des informations en temps réel, en interaction avec vos utilisateurs et fortement personnalisable pour s'adapter à vos besoins",
+      "DESCRIPTION" : "is a digital signage software system capable of broadcasting real time information, interacting with your users and widely customizable to fit your needs",
       "FEATURES": {
+        "INTERACTION": {
+          "TITLE": "Multiple interactions",
+          "DESCRIPTION": "Involve your users by allowing them to directly interact with digital screens via their smartphone, using gesture or by speech!"
+        },
         "REALTIME": {
           "TITLE": "Real time",
-          "DESCRIPTION": "Keep your audience by broadcasting the most recent contents"
+          "DESCRIPTION": "Keep your audience attention by broadcasting the most recent contents in real time!"
+        },
+        "SOCIAL": {
+          "TITLE": "Social network",
+          "DESCRIPTION": "Use our plateform to automatically get your community contents!"
         },
         "CENTRALIZATION": {
           "TITLE": "Cloud Content Management",
           "DESCRIPTION": "Stop the headache when managing your contents: keep them all in a unique platform!"
         },
-        "INTERACTION": {
-          "TITLE": "Direct interactions",
-          "DESCRIPTION": "Involve your users by allowing them to directly interact with digital screens!"
-        },
-        "AUTOMATED": {
-          "TITLE": "Récupération automatisée des contenus existants",
-          "DESCRIPTION": "Pourquoi recréer du contenu s'il existe déjà ? Ne perdez plus de temps et utilisez notre plateforme pour récupérer de manière automatisée les contenus que vous avez déjà réalisés ailleurs !"
-        },
         "DYNAMICEVENTS": {
-          "TITLE": "Dynamisation des événements",
-          "DESCRIPTION": "Tout le monde utilise son smartphone lors de vos événements ? Profitez-en pour donner un second souffle à vos événements en diffusant en direct les réactions de votre communauté sur écran et en les invitant à participer !"
+          "TITLE": "Boosting your events",
+          "DESCRIPTION": "Involving your community, allowing your guests to interact with digital screens, so many available ways to boost your events!"
         },
         "CUSTOMIZATION": {
-          "TITLE": "Personnalisation",
-          "DESCRIPTION": "Envie d'un affichage original mais pas le temps ni le budget ? Qu'à cela ne tienne : profitez des avantages de personnalisation et des interfaces simplifiées de notre solution et adaptez la diffusion à votre image !"
+          "TITLE": "Customization",
+          "DESCRIPTION": "Enjoy the advantages of customization and the simplied interfaces of our solution to adapt your broadcast to your image!"
         },
         "FULLWEB": {
-          "TITLE": "Full Web",
-          "DESCRIPTION": "Besoin d'accéder à vos écrans ou de changer du contenu alors que vous êtes en déplacement ? Plus d'inquiétude : notre solution ne nécessite qu'un navigateur web pour être utilisée et administrée !"
+          "TITLE": "High Availability",
+          "DESCRIPTION": "Ease your life : our solution only needs a web browser to be used and administrated!"
+        },
+        "TEAM": {
+          "TITLE": "PulseTotem Team",
+          "DESCRIPTION": "Don't loose time: be followed by our team in order to boost your communication!"
         }
       }
     },
