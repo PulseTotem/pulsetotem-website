@@ -88,9 +88,25 @@
         }
       }
     },
-    "PRODUCTIONS" : {
-      "DESCRIPTION" : "a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes"
+  "PRODUCTIONS" : {
+    "DESCRIPTION" : "was deployed in several events gathering until 4000 people",
+    "FETESCIENCE": {
+      "TITLE": "French science party 2015",
+      "SUBTITLE": "Demonstration of a digital signage remote control with a tablet in order to leave a message in an interactive guestbook"
     },
+    "MANGAME": {
+      "TITLE": "MangameShow 2015",
+      "SUBTITLE": "Demonstration of a digital signage remote control with a smartphone to trigger a picture caption by a camera attached to the screen"
+    },
+    "PANDAPERO": {
+      "TITLE": "Panda'Pero #3",
+      "SUBTITLE": "Demonstration of a multi-content digital signage during the Panda'Pero in june 2015, organized by Panda'Event"
+    },
+    "CHORALIES": {
+      "TITLE": "Choralies 2013",
+      "SUBTITLE": "9 screens (including 2 oversized) during 10 days at Vaison-La-Romaine in France for the Choralies 2013 gathering more than 4000 participants"
+    }
+  },
     "CONTACTUS" : {
       "FIRSTNAME" : "First Name",
       "LASTNAME" : "Last Name",

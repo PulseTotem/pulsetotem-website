@@ -77,8 +77,8 @@
           <li ng-repeat="production in productionsArray">
             <div layout="column" layout-fill layout-gt-md="row">
               <div class="production_container" flex="100" flex-gt-md="30">
-                <div class="production_title">{{production.title}}</div>
-                <div class="production_subtitle">{{production.subtitle}}</div>
+                <div class="production_title" translate="{{production.title}}"></div>
+                <div class="production_subtitle" translate="{{ production.subtitle}}"></div>
               </div>
               <div flex="100" flex-gt-md="70" ng-class="{'production_background' : !screenIsSmall, 'production_background production_background_sm' : screenIsSmall}" style="background-image: url('{{production.image}}')" ng-cloak>
               </div>

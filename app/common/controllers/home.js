@@ -112,23 +112,23 @@ angular.module('PulseTotemCommon')
       $scope.productionsArray = [];
       $scope.productionsArray.push({
         image: "images/productions/fetedelascience.jpg",
-        title: "Fête de la science 2015",
-        subtitle: "Stand et démonstration d'une prise de contrôle de l'écran avec une tablette pour laisser un message dans notre livre d'interactif"
+        title: 'PRODUCTIONS.FETESCIENCE.TITLE',
+        subtitle: 'PRODUCTIONS.FETESCIENCE.SUBTITLE'
       });
       $scope.productionsArray.push({
         image: "images/productions/mangameshow.jpg",
-        title: "MangameShow 2015",
-        subtitle: "Stand et démonstration d'une prise de contrôle de l'écran avec son smartphone, pour déclencher la prise d'une photo par l'écran lui-même"
+        title: 'PRODUCTIONS.MANGAME.TITLE',
+        subtitle: 'PRODUCTIONS.MANGAME.SUBTITLE'
       });
       $scope.productionsArray.push({
         image: "images/productions/pandapero.jpg",
-        title: "Panda'Pero #3",
-        subtitle: "Démonstration à l'occasion du Panda'Pero 3ème édition, organisé par Panda'Events"
+        title: 'PRODUCTIONS.PANDAPERO.TITLE',
+        subtitle: 'PRODUCTIONS.PANDAPERO.SUBTITLE'
       });
       $scope.productionsArray.push({
         image: "images/productions/choralies2013.jpg",
-        title: "Les Choralies 2013",
-        subtitle: "9 écrans (dont 2 géants) sur 10 jours à Vaison-La-Romaine, 4000 participants"
+        title: 'PRODUCTIONS.CHORALIES.TITLE',
+        subtitle: 'PRODUCTIONS.CHORALIES.SUBTITLE'
       });
 
       $scope.supporters = [];

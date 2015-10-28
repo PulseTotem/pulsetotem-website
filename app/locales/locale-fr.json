@@ -89,7 +89,23 @@
       }
     },
     "PRODUCTIONS" : {
-      "DESCRIPTION" : "a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes"
+      "DESCRIPTION" : "a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes",
+      "FETESCIENCE": {
+        "TITLE": "Fête de la science 2015",
+        "SUBTITLE": "Démonstration d'une prise de contrôle de l'écran avec une tablette pour laisser un message dans notre livre d'or interactif"
+      },
+      "MANGAME": {
+        "TITLE": "MangameShow 2015",
+        "SUBTITLE": "Démonstration d'une prise de contrôle de l'écran avec son smartphone, pour déclencher la prise d'une photo par l'écran lui-même"
+      },
+      "PANDAPERO": {
+        "TITLE": "Panda'Pero #3",
+        "SUBTITLE": "Démonstration d'un écran multi-contenus à l'occasion du Panda'Pero 3ème édition, en juin 2015, organisé par Panda'Events"
+      },
+      "CHORALIES": {
+        "TITLE": "Les Choralies 2013",
+        "SUBTITLE": "9 écrans (dont 2 géants) sur 10 jours à Vaison-La-Romaine à l'occasion des Choralies 2013 rassemblant plus de 4000 participants"
+      }
     },
     "CONTACTUS" : {
       "FIRSTNAME" : "Prénom",
