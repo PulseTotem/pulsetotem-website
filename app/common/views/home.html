@@ -108,8 +108,8 @@
     <div class="md-display-1 block_title">
       <h1>{{ 'MENU.ABOUTUS' | translate }}</h1>
     </div>
-    <div layout="row" layout-align="space-around center">
-      <md-card flex="auto" flex-gt-md="25">
+    <div layout="column" layout-align="space-around center" layout-gt-md="row">
+      <md-card flex="100" flex-gt-md="25">
         <img src="images/team/Christian.png" class="md-card-image" alt="Christian">
         <md-card-content>
           <h2 class="md-title team_username">Christian</h2>
@@ -139,7 +139,7 @@
           </md-list>
         </md-card-content>
       </md-card>
-      <md-card flex="auto" flex-gt-md="25">
+      <md-card flex="100" flex-gt-md="25">
         <img src="images/team/Simon.jpg" class="md-card-image" alt="Simon">
         <md-card-content>
           <h2 class="md-title team_username">Simon</h2>
@@ -332,6 +332,7 @@
             </md-input-container>
           </div>
           <div layout layout-sm="column" layout-margin>
+            <div class="g-recaptcha" data-sitekey="6LfF1w8TAAAAACvCkxiUY0mgbWqEd5hrr40BfVJl"></div>
             <md-button class="md-raised contact_form_button">{{'CONTACTUS.SEND' | translate}} !</md-button>
           </div>
         </form>
@@ -339,7 +340,7 @@
       <div flex="100" flex-gt-md="40" class="contactus_where">
         <md-list ng-cloak>
           <md-list-item>
-            <md-icon md-svg-icon="./bower_components/material-design-icons/communication/svg/production/ic_email_48px.svg"></md-icon>
+            <md-icon class="contactus_icon" md-svg-icon="./bower_components/material-design-icons/communication/svg/production/ic_email_48px.svg"></md-icon>
             <p>contact@pulsetotem.fr</p>
           </md-list-item>
           <md-list-item>
@@ -355,7 +356,7 @@
             <p><a href="http://www.facebook.com/pulsetotem">@pulsetotem</a></p>
           </md-list-item>
           <md-list-item>
-            <md-icon md-svg-icon="./bower_components/material-design-icons/maps/svg/production/ic_place_48px.svg"></md-icon>
+            <md-icon class="contactus_icon" md-svg-icon="./bower_components/material-design-icons/maps/svg/production/ic_place_48px.svg"></md-icon>
             <p>
               Business Pole, Bat. B - Entrée A - Etage 2<br/>
               1047 Route des Dolines - Allée Pierre Ziller<br/>
