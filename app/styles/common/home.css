@@ -185,22 +185,21 @@
   text-align: justify;
 }
 
-.av_icon {
-  width: 40%;
-  height: 40%;
-  color: #323232;
+.av_icon, .av_icon path, .av_icon polygon {
   width: 40%;
   height: 40%;
   color: #323232;
   position: absolute;
   top: 10%;
   left: 30%;
+  fill: #323232 !important;
 }
 
-.av_icon_details {
+.av_icon_details, .av_icon_details path, .av_icon_details polygon {
   color: white;
   margin-bottom: 5px;
   margin-right: 5px;
+  fill: white !important;
 }
 
 .av_details {
