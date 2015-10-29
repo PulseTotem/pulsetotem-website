@@ -108,6 +108,7 @@
     }
   },
   "ABOUTUS" : {
+    "COFOUNDER" : "Co-Founder",
     "MESSAGE" : {
       "CHRISTIAN" : "Users bursting with happiness, interaction, more interaction and interaction everywhere ! Here my dream !",
       "SIMON" : "Build together efficient and evolving tools for a communication, finally !, innovative and catchy !"
@@ -124,7 +125,11 @@
       "COMPANY" : "Company",
       "FUNCTION" : "Function",
       "MESSAGE" : "Message",
-      "SEND" : "Send"
+      "SEND" : "Send",
+      "REQUIRED_FIELD" : "This field is required.",
+      "EMAIL_FIELD" : "Value must a valid email.",
+      "MAIL_SENT" : "Thanks for your message !",
+      "MAIL_ERROR" : "An error occured during posting message. Sorry for that, we are not perfect... Please, use 'contact@pulsetotem.fr' to contact us and shout all your rage about us !"
     },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Recent Blog Posts"

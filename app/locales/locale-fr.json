@@ -108,6 +108,7 @@
       }
     },
     "ABOUTUS" : {
+      "COFOUNDER" : "Co-Fondateur",
       "MESSAGE" : {
         "CHRISTIAN" : "Des utilisateurs comblés, de l'interaction, encore de l'interaction, et toujours plus d'interaction ! Voici mon rêve !",
         "SIMON" : "Réalisons ensemble des outils performants et évolutifs pour une communication qui soit, enfin !, réellement innovante et accrocheuse !"
@@ -124,7 +125,11 @@
       "COMPANY" : "Entreprise",
       "FUNCTION" : "Fonction",
       "MESSAGE" : "Message",
-      "SEND" : "Envoyer"
+      "SEND" : "Envoyer",
+      "REQUIRED_FIELD" : "Ce champs est requis.",
+      "EMAIL_FIELD" : "La valeur doit être une adresse email valide.",
+      "MAIL_SENT" : "Merci pour votre message !",
+      "MAIL_ERROR" : "Une erreur est survenue durant l'envoi de votre message. Désolé, nous ne sommes pas parfaits... Utiliser l'adresse mail 'contact@pulsetotem.fr' pour nous contacter and exprimer toute votre haine envers nous !"
     },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Blog : Articles récents"

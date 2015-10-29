@@ -23,6 +23,7 @@ angular
     'angular-carousel',
     'fox.scrollReveal',
     'duScroll',
+    'vcRecaptcha',
     'PulseTotemCommon'
     ])
     .config(['$locationProvider', function($locationProvider) {

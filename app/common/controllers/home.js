@@ -8,7 +8,7 @@
  * Controller of the pulsetotemApp
  */
 angular.module('PulseTotemCommon')
-  .controller('PulseTotemCommon.HomeCtrl', ['$rootScope', '$scope', '$anchorScroll', '$translate', function($rootScope, $scope, $anchorScroll, $translate){
+  .controller('PulseTotemCommon.HomeCtrl', ['$rootScope', '$scope', '$anchorScroll', '$translate', '$http', 'CONSTANTS', 'vcRecaptchaService', function($rootScope, $scope, $anchorScroll, $translate, $http, CONSTANTS, vcRecaptchaService){
 
     $scope.ppArray = [];
 
@@ -144,6 +144,27 @@ angular.module('PulseTotemCommon')
       $scope.supporters.push({
         logo: 'images/logos/ipe_logo.jpg'
       });
+
+    $scope.mailSending = false;
+    $scope.mailSent = false;
+    $scope.mailError = false;
+
+    $scope.sendMail = function(contact) {
+      $scope.mailSending = true;
+
+      var response = vcRecaptchaService.getResponse();
+      contact['recaptcha'] = response;
+
+      $http.post(CONSTANTS.backendUrl + 'contact/send', contact)
+        .success(function(data, status, headers, config) {
+          $scope.mailSending = false;
+          $scope.mailSent = true;
+        })
+        .error(function(data, status, headers, config) {
+          $scope.mailSending = false;
+          $scope.mailError = true;
+        });
+    };
 
     setTimeout(function () {
       $anchorScroll();

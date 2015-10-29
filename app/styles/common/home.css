@@ -183,6 +183,7 @@
 .av_container .av_description {
   padding: 3%;
   text-align: justify;
+  font-size: 2.5vh;
 }
 
 .av_icon, .av_icon path, .av_icon polygon {
@@ -368,6 +369,10 @@
   text-align: center;
 }
 
+.aboutus_social {
+  text-align: center;
+}
+
 /* Contact Us */
 #contactus {
   position: relative;
@@ -413,6 +418,23 @@
 
 .contactus_icon path {
   fill: #37ABC8 !important;
+}
+
+.contactus_mailSent {
+  color: #37ABC8;
+  font-size: 3vh;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.contactus_progress {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactus_social {
+  text-align: center;
 }
 
 /* Supporters */
