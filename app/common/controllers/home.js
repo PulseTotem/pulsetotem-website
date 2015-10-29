@@ -8,7 +8,7 @@
  * Controller of the pulsetotemApp
  */
 angular.module('PulseTotemCommon')
-  .controller('PulseTotemCommon.HomeCtrl', ['$rootScope', '$scope', '$anchorScroll', '$translate', '$http', 'CONSTANTS', function($rootScope, $scope, $anchorScroll, $translate, $http, CONSTANTS){
+  .controller('PulseTotemCommon.HomeCtrl', ['$rootScope', '$scope', '$anchorScroll', '$translate', '$http', 'CONSTANTS', 'vcRecaptchaService', function($rootScope, $scope, $anchorScroll, $translate, $http, CONSTANTS, vcRecaptchaService){
 
     $scope.ppArray = [];
 
@@ -145,21 +145,24 @@ angular.module('PulseTotemCommon')
         logo: 'images/logos/ipe_logo.jpg'
       });
 
+    $scope.mailSending = false;
+    $scope.mailSent = false;
+    $scope.mailError = false;
+
     $scope.sendMail = function(contact) {
+      $scope.mailSending = true;
+
+      var response = vcRecaptchaService.getResponse();
+      contact['recaptcha'] = response;
+
       $http.post(CONSTANTS.backendUrl + 'contact/send', contact)
         .success(function(data, status, headers, config) {
-          console.log(data);
-          console.log(status);
-          console.log(headers);
-          console.log(config);
+          $scope.mailSending = false;
+          $scope.mailSent = true;
         })
         .error(function(data, status, headers, config) {
-          // called asynchronously if an error occurs
-          // or server returns response with an error status.
-
-          //TODO: Manage error during post => display error message
-          console.log("fail during contact form email sent");
-          console.log(data);
+          $scope.mailSending = false;
+          $scope.mailError = true;
         });
     };
 

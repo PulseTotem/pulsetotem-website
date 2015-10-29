@@ -67,7 +67,10 @@
         <!-- endSocketIO -->
 
       <!-- recaptcha -->
-      <script src='https://www.google.com/recaptcha/api.js'></script>
+      <script
+        src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit"
+        async defer
+        ></script>
 
     </head>
   <body layout="column" layout-fill ng-app="pulsetotemApp" ng-controller="PulseTotemCommon.GlobalCtrl">
@@ -146,6 +149,7 @@
     <script src="bower_components/scrollReveal.js/dist/scrollReveal.js"></script>
     <script src="bower_components/fox-angular-scrollReveal.js/dist/fox-angular-scrollReveal.js"></script>
     <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="bower_components/angular-recaptcha/release/angular-recaptcha.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

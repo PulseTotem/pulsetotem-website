@@ -126,7 +126,9 @@
       "MESSAGE" : "Message",
       "SEND" : "Send",
       "REQUIRED_FIELD" : "This field is required.",
-      "EMAIL_FIELD" : "Value must a valid email."
+      "EMAIL_FIELD" : "Value must a valid email.",
+      "MAIL_SENT" : "Thanks for your message !",
+      "MAIL_ERROR" : "An error occured during posting message. Sorry for that, we are not perfect... Please, use 'contact@pulsetotem.fr' to contact us and shout all your rage about us !"
     },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Recent Blog Posts"

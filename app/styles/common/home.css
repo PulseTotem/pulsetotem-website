@@ -416,6 +416,15 @@
   fill: #37ABC8 !important;
 }
 
+.contactus_mailSent {
+  color: #37ABC8;
+  font-size: 3vh;
+}
+
+.contactus_hide {
+  display: none;
+}
+
 /* Supporters */
 #supporters {
   position: relative;
