@@ -125,7 +125,8 @@
       "FUNCTION" : "Fonction",
       "MESSAGE" : "Message",
       "SEND" : "Envoyer",
-      "REQUIRED_FIELD" : "Ce champs est requis."
+      "REQUIRED_FIELD" : "Ce champs est requis.",
+      "EMAIL_FIELD" : "La valeur doit être une adresse email valide."
     },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Blog : Articles récents"

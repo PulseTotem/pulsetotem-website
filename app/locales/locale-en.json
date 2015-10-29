@@ -125,7 +125,8 @@
       "FUNCTION" : "Function",
       "MESSAGE" : "Message",
       "SEND" : "Send",
-      "REQUIRED_FIELD" : "This field is required."
+      "REQUIRED_FIELD" : "This field is required.",
+      "EMAIL_FIELD" : "Value must a valid email."
     },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Recent Blog Posts"

@@ -8,7 +8,7 @@
  * Controller of the pulsetotemApp
  */
 angular.module('PulseTotemCommon')
-  .controller('PulseTotemCommon.HomeCtrl', ['$rootScope', '$scope', '$anchorScroll', '$translate', function($rootScope, $scope, $anchorScroll, $translate){
+  .controller('PulseTotemCommon.HomeCtrl', ['$rootScope', '$scope', '$anchorScroll', '$translate', '$http', 'CONSTANTS', function($rootScope, $scope, $anchorScroll, $translate, $http, CONSTANTS){
 
     $scope.ppArray = [];
 
@@ -144,6 +144,24 @@ angular.module('PulseTotemCommon')
       $scope.supporters.push({
         logo: 'images/logos/ipe_logo.jpg'
       });
+
+    $scope.sendMail = function(contact) {
+      $http.post(CONSTANTS.backendUrl + 'contact/send', contact)
+        .success(function(data, status, headers, config) {
+          console.log(data);
+          console.log(status);
+          console.log(headers);
+          console.log(config);
+        })
+        .error(function(data, status, headers, config) {
+          // called asynchronously if an error occurs
+          // or server returns response with an error status.
+
+          //TODO: Manage error during post => display error message
+          console.log("fail during contact form email sent");
+          console.log(data);
+        });
+    };
 
     setTimeout(function () {
       $anchorScroll();
