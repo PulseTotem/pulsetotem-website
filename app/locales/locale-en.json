@@ -124,7 +124,8 @@
       "COMPANY" : "Company",
       "FUNCTION" : "Function",
       "MESSAGE" : "Message",
-      "SEND" : "Send"
+      "SEND" : "Send",
+      "REQUIRED_FIELD" : "This field is required."
     },
     "FOOTER" : {
       "RECENT_BLOG_POSTS" : "Recent Blog Posts"

@@ -183,6 +183,7 @@
 .av_container .av_description {
   padding: 3%;
   text-align: justify;
+  font-size: 2.5vh;
 }
 
 .av_icon, .av_icon path, .av_icon polygon {
