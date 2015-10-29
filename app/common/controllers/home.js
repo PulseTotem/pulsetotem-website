@@ -13,7 +13,7 @@ angular.module('PulseTotemCommon')
     $scope.ppArray = [];
 
     $scope.ppArray.push({
-      image: 'images/home/communaute.jpg',
+      image: 'images/home/dynamiser.jpg',
       title: 'HOME.COMMUNITY.TITLE',
       subtitle: 'HOME.COMMUNITY.SUBTITLE',
       blog: null,
@@ -29,7 +29,7 @@ angular.module('PulseTotemCommon')
     });
 
     $scope.ppArray.push({
-      image: 'images/home/multi-content.jpg',
+      image: 'images/home/communaute.jpg',
       title: 'HOME.MULTICONTENT.TITLE',
       subtitle: 'HOME.MULTICONTENT.SUBTITLE',
       blog: null,
@@ -37,7 +37,7 @@ angular.module('PulseTotemCommon')
     });
 
     $scope.ppArray.push({
-      image: 'images/home/dynamiser.jpg',
+      image: 'images/home/innovation.jpg',
       title: 'HOME.DYNAMIZE.TITLE',
       subtitle: 'HOME.DYNAMIZE.SUBTITLE',
       blog: null,

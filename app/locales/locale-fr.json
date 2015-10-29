@@ -7,7 +7,7 @@
         "HOME": "Accueil",
         "SOLUTION": "Solution",
         "PRODUCTIONS": "Réalisations",
-        "ABOUTUS": "A propos",
+        "ABOUTUS": "Equipe",
         "WHERE" : "Où nous trouver ?",
         "CONTACTUS": "Contactez Nous",
         "SUPPORTERS": "Merci pour votre soutien !",
@@ -104,17 +104,17 @@
       },
       "CHORALIES": {
         "TITLE": "Les Choralies 2013",
-        "SUBTITLE": "9 écrans (dont 2 géants) sur 10 jours à Vaison-La-Romaine à l'occasion des Choralies 2013 rassemblant plus de 4000 participants"
+        "SUBTITLE": "Mise en place de 9 écrans (dont 2 géants) sur 10 jours à Vaison-La-Romaine à l'occasion des Choralies 2013 rassemblant plus de 4000 participants"
       }
     },
     "ABOUTUS" : {
       "MESSAGE" : {
         "CHRISTIAN" : "Des utilisateurs comblés, de l'interaction, encore de l'interaction, et toujours plus d'interaction ! Voici mon rêve !",
-        "SIMON" : ""
+        "SIMON" : "Réalisons ensemble des outils performants et évolutifs pour une communication qui soit, enfin !, réellement innovante et accrocheuse !"
       },
       "QUOTE" : {
         "CHRISTIAN" : "Que la force soit avec vous !",
-        "SIMON" : ""
+        "SIMON" : "Sans imagination, pas d'innovation !"
       }
     },
     "CONTACTUS" : {
