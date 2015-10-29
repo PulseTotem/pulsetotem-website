@@ -7,7 +7,7 @@
         "HOME": "Home",
         "SOLUTION": "Solution",
         "PRODUCTIONS": "Productions",
-        "ABOUTUS": "About Us",
+        "ABOUTUS": "Team",
         "WHERE" : "Where to find us ?",
         "CONTACTUS": "Contact Us",
         "SUPPORTERS": "Thanks for your support !",
@@ -38,7 +38,7 @@
       },
       "COMMUNITY": {
         "TITLE": "Improve the reactivity of your screens",
-        "SUBTITLE": "With PulseTotem, let your community express itself in real time on your screens"
+        "SUBTITLE": "With PulseTotem, allow your community to express itself in real time on your screens"
       },
       "INTERACTION": {
         "TITLE": "Improve your visibility, Catch your audience's attention",
@@ -46,7 +46,7 @@
       },
       "DYNAMIZE": {
         "TITLE": "Be different and innovative in your digital communications",
-        "SUBTITLE": "Contact PulseTotem's team and together let's build the solution which fit YOUR needs"
+        "SUBTITLE": "Contact PulseTotem's team and together let's build the solution that fits YOUR needs"
       },
       "MORE" : "More",
       "CONTACTUS" : "Contact us !"
@@ -89,7 +89,7 @@
       }
     },
   "PRODUCTIONS" : {
-    "DESCRIPTION" : "was deployed in several events gathering until 4000 people",
+    "DESCRIPTION" : "was deployed in several events gathering up to 4000 people",
     "FETESCIENCE": {
       "TITLE": "French science party 2015",
       "SUBTITLE": "Demonstration of a digital signage remote control with a tablet in order to leave a message in an interactive guestbook"
@@ -100,21 +100,21 @@
     },
     "PANDAPERO": {
       "TITLE": "Panda'Pero #3",
-      "SUBTITLE": "Demonstration of a multi-content digital signage during the Panda'Pero in june 2015, organized by Panda'Event"
+      "SUBTITLE": "Demonstration of a multi-content digital signage during the Panda'Pero in June 2015, organized by Panda'Event"
     },
     "CHORALIES": {
       "TITLE": "Choralies 2013",
-      "SUBTITLE": "9 screens (including 2 oversized) during 10 days at Vaison-La-Romaine in France for the Choralies 2013 gathering more than 4000 participants"
+      "SUBTITLE": "Setup of 9 screens (including 2 big) during 10 days at Vaison-La-Romaine in France for the Choralies 2013 gathering more than 4000 participants"
     }
   },
   "ABOUTUS" : {
     "MESSAGE" : {
       "CHRISTIAN" : "Users bursting with happiness, interaction, more interaction and interaction everywhere ! Here my dream !",
-      "SIMON" : ""
+      "SIMON" : "Build together efficient and evolving tools for a communication, finally !, innovative and catchy !"
     },
     "QUOTE" : {
       "CHRISTIAN" : "May the force be with you !",
-      "SIMON" : ""
+      "SIMON" : "Without imagination, no innovation !"
     }
   },
     "CONTACTUS" : {
