@@ -369,6 +369,10 @@
   text-align: center;
 }
 
+.aboutus_social {
+  text-align: center;
+}
+
 /* Contact Us */
 #contactus {
   position: relative;
@@ -419,10 +423,18 @@
 .contactus_mailSent {
   color: #37ABC8;
   font-size: 3vh;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
-.contactus_hide {
-  display: none;
+.contactus_progress {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactus_social {
+  text-align: center;
 }
 
 /* Supporters */
