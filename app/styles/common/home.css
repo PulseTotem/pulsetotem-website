@@ -318,6 +318,7 @@
 .production_background {
   background-size: contain;
   background-repeat: no-repeat;
+  min-height: 100% !important;
 }
 
 .production_background_sm {
