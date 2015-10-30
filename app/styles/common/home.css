@@ -349,6 +349,10 @@
   min-height: 90vh;
 }
 
+[layout="column"] > [flex-gt-md="25"] {
+  max-height: 100%;
+}
+
 #aboutus_block_content_tabs {
   min-height: 85vh;
 }
@@ -377,6 +381,10 @@
 /* Contact Us */
 #contactus {
   position: relative;
+}
+
+[layout="column"] > [flex-gt-md="60"] {
+  max-height: 100%;
 }
 
 .contact_form_button {
