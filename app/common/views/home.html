@@ -285,8 +285,10 @@
       <h1>{{ 'MENU.SUPPORTERS' | translate }}</h1>
     </div>
     <div class="supporters_list" layout="row" layout-sm="column" layout-align="space-around center" layout-margin layout-wrap>
-      <div ng-repeat="supporter in supporters" class="supporter" style="background-image: url('{{supporter.logo}}')" flex="100" flex-gt-sm="40" flex-gt-md="20">
-      </div>
+      <a ng-repeat="supporter in supporters" ng-href="{{supporter.url}}" flex="100" flex-gt-sm="40" flex-gt-md="20" target="_blank">
+	      <div  class="supporter"   style="background-image: url('{{supporter.logo}}')">
+	      </div>
+      </a>
     </div>
   </div>
 

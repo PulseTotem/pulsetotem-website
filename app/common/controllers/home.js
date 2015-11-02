@@ -133,16 +133,20 @@ angular.module('PulseTotemCommon')
 
       $scope.supporters = [];
       $scope.supporters.push({
-        logo: 'images/rewards/LogoFondationUnice.png'
+        logo: 'images/rewards/LogoFondationUnice.png',
+        url: 'http://blog.pulsetotem.fr/2015/11/02/octobre-science-et-celebration-pour-pulsetotem/'
       });
       $scope.supporters.push({
-        logo: 'images/rewards/ilab2015.jpg'
+        logo: 'images/rewards/ilab2015.jpg',
+        url: '#'
       });
       $scope.supporters.push({
-        logo: 'images/rewards/logo-innovact-center.png'
+        logo: 'images/rewards/logo-innovact-center.png',
+        url: '#'
       });
       $scope.supporters.push({
-        logo: 'images/logos/ipe_logo.jpg'
+        logo: 'images/logos/ipe_logo.jpg',
+        url: 'http://www.incubateurpacaest.org/'
       });
 
     $scope.mailSending = false;
