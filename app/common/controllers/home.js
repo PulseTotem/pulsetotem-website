@@ -111,6 +111,11 @@ angular.module('PulseTotemCommon')
 
       $scope.productionsArray = [];
       $scope.productionsArray.push({
+        image: "images/productions/jm2l2015_live_video.jpg",
+        title: 'PRODUCTIONS.JM2L.TITLE',
+        subtitle: 'PRODUCTIONS.JM2L.SUBTITLE'
+      });
+      $scope.productionsArray.push({
         image: "images/productions/fetedelascience2015_livre_or_interactif.jpg",
         title: 'PRODUCTIONS.FETESCIENCE.TITLE',
         subtitle: 'PRODUCTIONS.FETESCIENCE.SUBTITLE'

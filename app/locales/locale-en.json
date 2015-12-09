@@ -90,6 +90,10 @@
     },
   "PRODUCTIONS" : {
     "DESCRIPTION" : "was deployed in several events gathering up to 4000 people",
+    "JM2L": {
+      "TITLE": "JM2L 2015",
+      "SUBTITLE": "Demonstration of the usage of live broadcasting conferences during an associative event"
+    },
     "FETESCIENCE": {
       "TITLE": "French science party 2015",
       "SUBTITLE": "Demonstration of a digital signage remote control with a tablet in order to leave a message in an interactive guestbook"

@@ -90,6 +90,10 @@
     },
     "PRODUCTIONS" : {
       "DESCRIPTION" : "a été déployé dans plusieurs événements regroupant jusqu'à 4000 personnes",
+      "JM2L": {
+        "TITLE": "JM2L 2015",
+        "SUBTITLE": "Démonstration de l'utilisation d'une retransmission vidéo en direct de conférences lors d'un salon associatif"
+      },
       "FETESCIENCE": {
         "TITLE": "Fête de la science 2015",
         "SUBTITLE": "Démonstration d'une prise de contrôle de l'écran avec une tablette pour laisser un message dans notre livre d'or interactif"
