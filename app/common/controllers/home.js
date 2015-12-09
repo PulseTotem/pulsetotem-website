@@ -133,11 +133,15 @@ angular.module('PulseTotemCommon')
 
       $scope.supporters = [];
       $scope.supporters.push({
-        logo: 'images/rewards/LogoFondationUnice.png',
+        logo: 'images/rewards/logo-upe06.jpg',
+        url: 'http://blog.pulsetotem.fr/2015/12/02/prix-de-la-jeune-entreprise-par-upe06/'
+      });
+      $scope.supporters.push({
+        logo: 'images/rewards/logo-FondationUnice.png',
         url: 'http://blog.pulsetotem.fr/2015/11/02/octobre-science-et-celebration-pour-pulsetotem/'
       });
       $scope.supporters.push({
-        logo: 'images/rewards/ilab2015.jpg',
+        logo: 'images/rewards/logo-ilab2015.jpg',
         url: '#'
       });
       $scope.supporters.push({
